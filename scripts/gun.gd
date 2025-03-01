@@ -10,8 +10,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	look_at(get_global_mouse_position())
 	rotation_degrees=wrap(rotation_degrees,0,360)
+	
 	if rotation_degrees > 90 && rotation_degrees < 270:
 		scale.y=-1
 	else:
 		scale.y=1
-	print(rotation_degrees)

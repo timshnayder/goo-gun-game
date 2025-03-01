@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c26gth827bjd8"]
+
+[ext_resource type="Script" path="res://scripts/orange-goo-projectile.gd" id="1_vdj85"]
+[ext_resource type="Texture2D" uid="uid://vsgb0r3dopbk" path="res://icon.svg" id="2_qyfyp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nuche"]
+size = Vector2(14, 14)
+
+[node name="OrangeGooProjectile" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource("1_vdj85")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_qyfyp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_nuche")

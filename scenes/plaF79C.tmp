@@ -15,11 +15,9 @@ position = Vector2(9.5, -24.5)
 scale = Vector2(0.289062, 0.351563)
 texture = ExtResource("1_ur5tt")
 
-[node name="Gun" parent="." instance=ExtResource("3_lfjsi")]
-position = Vector2(10, -25)
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(9.5, -24.5)
 shape = SubResource("RectangleShape2D_sqjl8")
-one_way_collision = true
-one_way_collision_margin = 38.0
+
+[node name="gun" parent="." instance=ExtResource("3_lfjsi")]
+position = Vector2(10, -25)
