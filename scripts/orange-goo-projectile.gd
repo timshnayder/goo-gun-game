@@ -11,8 +11,6 @@ var maxGravity=1000
 
 func _ready() -> void:
 	position = pos
-	position.x+=10
-	position.y-=25
 	velocity=Vector2(speed,0).rotated(rota)
 	velocity*=20
 
