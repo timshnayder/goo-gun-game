@@ -54,7 +54,17 @@ func _physics_process(delta):
 	var horizontal_direction = Input.get_axis("move_left","move_right")
 	if horizontal_direction == 0 || velocity.x > maxSpeed || velocity.x<-maxSpeed:
 		if is_on_floor():
-			velocity.x -= accel*sign(velocity.x)
+			if velocity.x > 0:
+				if velocity.x-accel*sign(velocity.x) <= 0:
+					velocity.x = 0
+				else:
+					velocity.x -= accel*sign(velocity.x)
+			if velocity.x < 0:
+				if velocity.x-accel*sign(velocity.x) >= 0:
+					velocity.x = 0
+				else:
+					velocity.x -= accel*sign(velocity.x)
+			
 		else:
 			velocity.x -= airresist*sign(velocity.x)
 	else: 
