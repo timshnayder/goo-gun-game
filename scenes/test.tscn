@@ -469,6 +469,12 @@ position = Vector2(-1, 1)
 [node name="Player" parent="." instance=ExtResource("1_5p4e3")]
 position = Vector2(26, 456)
 
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(-26, -456)
+offset = Vector2(40, 350)
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+
 [node name="TileMapNode" type="Node2D" parent="."]
 
 [node name="Surfaces" type="TileMapLayer" parent="TileMapNode"]
