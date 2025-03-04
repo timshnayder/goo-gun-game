@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=4 uid="uid://b7q7aasijw444"]
+[gd_scene load_steps=14 format=4 uid="uid://b7q7aasijw444"]
 
 [ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://scenes/player.tscn" id="1_5p4e3"]
 [ext_resource type="Texture2D" uid="uid://be4vvg1dbt1od" path="res://terrain-tilemap.png" id="2_wli6g"]
 [ext_resource type="Texture2D" uid="uid://c53igoygt7cg6" path="res://terrain-tilemap-blue.png" id="3_2turc"]
 [ext_resource type="Texture2D" uid="uid://beljkf6wewr71" path="res://terrain-tilemap-orange.png" id="4_iq77d"]
+[ext_resource type="PackedScene" uid="uid://bs73tyspdyu60" path="res://turret.tscn" id="5_wcwck"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_02lqj"]
 texture = ExtResource("2_wli6g")
@@ -461,13 +462,19 @@ size = Vector2(353.5, 159.5)
 size = Vector2(36, 486)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qe5yk"]
-size = Vector2(545, 20)
+size = Vector2(446.5, 20)
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(-1, 1)
 
 [node name="Player" parent="." instance=ExtResource("1_5p4e3")]
 position = Vector2(26, 456)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(0, -38)
+offset = Vector2(18.435, 17.92)
+zoom = Vector2(1.5, 1.5)
+position_smoothing_enabled = true
 
 [node name="TileMapNode" type="Node2D" parent="."]
 
@@ -499,3 +506,10 @@ shape = SubResource("RectangleShape2D_htq6u")
 [node name="floor" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(651, 538)
 shape = SubResource("RectangleShape2D_qe5yk")
+
+[node name="floor2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(657, 412)
+shape = SubResource("RectangleShape2D_qe5yk")
+
+[node name="Turret" parent="." instance=ExtResource("5_wcwck")]
+position = Vector2(656, 328)
