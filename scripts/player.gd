@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-@onready var blueGoo = preload("res://scenes/blue-goo-projectile.tscn")
-@onready var orangeGoo = preload("res://scenes/orange-goo-projectile.tscn")
+@onready var blueGoo = preload("res://scenes/blue_goo_projectile.tscn")
+@onready var orangeGoo = preload("res://scenes/orange_goo_projectile.tscn")
 @onready var gun = $Gun
 @onready var tilemap = $"../TileMapNode/Surfaces"
 
