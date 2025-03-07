@@ -22,6 +22,7 @@ func _physics_process(delta):
 	
 	if is_on_floor():
 		var tilePos = tilemap.local_to_map(tilemap.to_local(position));
+		
 		tilePos.y+=1;
 		tilemap.set_cell(tilePos,1,tilemap.get_cell_atlas_coords(tilePos))
 		$GPUParticles2D.emitting = true
