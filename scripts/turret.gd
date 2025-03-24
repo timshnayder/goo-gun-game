@@ -3,7 +3,6 @@ extends Node2D
 @onready var ray_cast = $RayCast2D
 @onready var timer = $Timer
 @export var ammo : PackedScene
-
 var player 
 
 func _ready():
@@ -25,13 +24,6 @@ func _check_player_collision():
 		timer.stop()
 
 func _on_timer_timeout():
-	print("shot fired")
-	_shoot()
+	player.kill() 
 
-func _shoot():
-	var bullet = ammo.instantiate()
-	print("bullet fired")
-	bullet.position = position
-	bullet.dir = (ray_cast.target_position).normalized()
-	get_tree().current_scene.add_child(bullet)
 	

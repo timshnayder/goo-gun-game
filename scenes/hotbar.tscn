@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=3 uid="uid://mrh1txgwsw53"]
+
+[ext_resource type="Script" path="res://scenes/hotbar.gd" id="1_o2b15"]
+
+[node name="hotbar" type="Control"]
+visibility_layer = 16
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o2b15")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 499.0
+offset_right = 518.0
+offset_bottom = 646.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.154
+anchor_bottom = 0.07
+offset_left = 9.0
+offset_top = 43.0
+offset_right = 257.592
+offset_bottom = 101.71
+theme_override_font_sizes/font_size = 50
+text = "goo selected:"
+
+[node name="Panel" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 30.0
+offset_right = 468.0
+offset_bottom = 125.0
+
+[node name="jmp" type="Label" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 31.0
+offset_right = 103.0
+offset_bottom = 73.0
+theme_override_font_sizes/font_size = 30
+text = "jumpy"
+
+[node name="sped" type="Label" parent="Panel/Panel"]
+visible = false
+layout_mode = 0
+offset_left = 12.0
+offset_top = 31.0
+offset_right = 103.0
+offset_bottom = 73.0
+theme_override_font_sizes/font_size = 30
+text = "speedy"
