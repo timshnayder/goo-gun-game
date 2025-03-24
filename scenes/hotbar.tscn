@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://mrh1txgwsw53"]
 
-[ext_resource type="Script" path="res://scenes/hotbar.gd" id="1_o2b15"]
+[ext_resource type="Script" uid="uid://worhnrgnev5s" path="res://scripts/hotbar.gd" id="1_o2b15"]
 
 [node name="hotbar" type="Control"]
 visibility_layer = 16

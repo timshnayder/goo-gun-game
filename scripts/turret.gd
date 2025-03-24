@@ -3,7 +3,7 @@ extends Node2D
 @onready var ray_cast = $RayCast2D
 @onready var timer = $Timer
 @export var ammo : PackedScene
-var player 
+@onready var player = $"../Player"
 
 func _ready():
 	player = get_parent().find_child("Player")
