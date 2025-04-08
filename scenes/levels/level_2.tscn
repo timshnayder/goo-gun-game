@@ -162,6 +162,7 @@ sources/0 = SubResource("TileSetAtlasSource_0vex8")
 position = Vector2(46, 409)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(575.75, 550.25)
