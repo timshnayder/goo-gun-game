@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://bupvn3dcn0l68"]
+[gd_scene load_steps=18 format=4 uid="uid://bupvn3dcn0l68"]
 
 [ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://scenes/player.tscn" id="1_t2orq"]
 [ext_resource type="Texture2D" uid="uid://be4vvg1dbt1od" path="res://terrain-tilemap.png" id="2_1yh5i"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bpi1kn40rvpxi" path="res://scenes/next_level.tscn" id="3_kx6vr"]
 [ext_resource type="Texture2D" uid="uid://beljkf6wewr71" path="res://terrain-tilemap-orange.png" id="4_ght5n"]
 [ext_resource type="PackedScene" uid="uid://mrh1txgwsw53" path="res://scenes/hotbar.tscn" id="6_sk5k4"]
+[ext_resource type="PackedScene" uid="uid://bs73tyspdyu60" path="res://scenes/turret.tscn" id="8_dga24"]
 [ext_resource type="PackedScene" uid="uid://b7wk7bae8r46c" path="res://scenes/gameover.tscn" id="8_s8va5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xuyal"]
@@ -543,3 +544,6 @@ offset_top = 232.0
 offset_right = 1264.0
 offset_bottom = 255.0
 text = "Use spacebar to jump"
+
+[node name="Turret" parent="." instance=ExtResource("8_dga24")]
+position = Vector2(544, 228)
