@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7wk7bae8r46c"]
+
+[ext_resource type="Script" uid="uid://b6gdj5t555fyq" path="res://scripts/gameover.gd" id="1_f1a0c"]
+
+[node name="gameover" type="Control"]
+visibility_layer = 32
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f1a0c")
+
+[node name="retry" type="Button" parent="."]
+z_index = 2
+layout_mode = 0
+offset_left = 253.0
+offset_top = 268.0
+offset_right = 899.0
+offset_bottom = 345.0
+text = "respawn"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 58.0
+offset_right = 1164.0
+offset_bottom = 242.0
+theme_override_font_sizes/font_size = 81
+text = "you died dumbass"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 138.0
+offset_right = 1164.0
+offset_bottom = 322.0
+theme_override_font_sizes/font_size = 25
+text = "a turret shot you to death"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="retry" to="." method="_on_retry_pressed"]

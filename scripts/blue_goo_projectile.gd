@@ -15,7 +15,7 @@ func _ready() -> void:
 	velocity=Vector2(speed,0).rotated(rota)
 	velocity*=20
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	velocity.y+=gravity
 	if(velocity.y > maxGravity):
 		velocity.y = maxGravity
