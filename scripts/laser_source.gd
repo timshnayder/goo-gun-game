@@ -9,10 +9,29 @@ var rotating_forward: bool = true
 
 @onready var ray = $LaserRay
 @onready var line = $LaserLine
+@onready var player = $"../Player"
+
+func _ready() -> void:
+	ray.rotation_degrees=start_angle_deg
 
 func _process(delta: float) -> void:
-	var laser_end = ray.get_cast_to()
-	if ray.is_colliding():
-		laser_end = ray.get_collision_point()-global_position
-	line.global_position = global_position
-	line.points = [Vector2.ZERO, laser_end]
+	if rotating_forward:
+		ray.rotation_degrees += rotation_speed_deg * delta
+		if ray.rotation_degrees >= end_angle_deg:
+			ray.rotation_degrees = end_angle_deg
+			rotating_forward = false
+	else:
+		ray.rotation_degrees -= rotation_speed_deg * delta
+		if ray.rotation_degrees <= start_angle_deg:
+			ray.rotation_degrees = start_angle_deg
+			rotating_forward = true
+		
+	
+	var laser_end = ray.get_collision_point()
+	print(laser_end	)
+		#player.kill()
+	line.points = [Vector2.ZERO, laser_end-global_position]	
+	
+	
+	
+	
