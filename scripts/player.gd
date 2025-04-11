@@ -27,7 +27,7 @@ func kill():
 	isDead = true
 	sprite.hide()
 	gun.hide()
-	gameover.show()
+	gameover.show() 
 	gameover.get_node("retry").grab_focus()
 	print("visible!")
 	
