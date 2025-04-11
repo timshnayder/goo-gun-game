@@ -7,6 +7,7 @@ extends CharacterBody2D
 @onready var gameover = $Camera2D/CanvasLayer/gameover
 @onready var sprite = $Sprite2D
 @onready var hotbar = $Camera2D/CanvasLayer/hotbar
+@onready var timer = $Timer
 @export var maxSpeed = 300
 @export var gravity = 30
 @export var maxGravity = 700
@@ -56,7 +57,7 @@ func _physics_process(delta):
 		if(velocity.y > maxGravity):
 			velocity.y=maxGravity
 	
-	if Input.is_action_pressed("jump") && is_on_floor():
+	if Input.is_action_pressed("jump") && (is_on_floor() || !timer.is_stopped()):
 		velocity.y = -jumpForce
 		
 	if Input.is_action_just_pressed("changeL"):
@@ -101,5 +102,7 @@ func _physics_process(delta):
 		velocity.x+=accel*horizontal_direction
 	
 
-		
+	var wasOnFloor = is_on_floor()
 	move_and_slide()
+	if wasOnFloor && !is_on_floor() && !Input.is_action_pressed("jump"):
+		timer.start();
