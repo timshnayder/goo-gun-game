@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @onready var blueGoo = preload("res://scenes/blue_goo_projectile.tscn")
 @onready var orangeGoo = preload("res://scenes/orange_goo_projectile.tscn")
+@onready var stickyGoo = preload("res://scenes/sticky_goo_projectile.tscn")
 @onready var gun = $Gun
 @onready var tilemap = $"../TileMapNode/Surfaces"
 @onready var gameover = $Camera2D/CanvasLayer/gameover
@@ -54,7 +55,6 @@ func _physics_process(delta):
 			var tilePos = tilemap.local_to_map(tilemap.to_local(position));
 			tilePos.y+=2
 			var tileId = tilemap.get_cell_source_id(tilePos)
-			print(lastGoo)
 			if tileId == 0 || tileId == -1: # air or ground
 				if lastGoo != 0:
 					gooTimer.start()
@@ -103,7 +103,7 @@ func _physics_process(delta):
 	if Input.is_action_pressed("shoot-blue"):
 		var goo = blueGoo.instantiate()
 		if gooselect == 1:
-			goo = blueGoo.instantiate()
+			goo = stickyGoo.instantiate()
 		elif gooselect == 2:
 			goo = orangeGoo.instantiate()
 		goo.pos=global_position
@@ -129,6 +129,20 @@ func _physics_process(delta):
 	else: 
 		velocity.x+=accel*horizontal_direction
 	
+	var canSticky = false
+	var tilePos = tilemap.local_to_map(tilemap.to_local(position));
+	tilePos.x+=2
+	var tileId = tilemap.get_cell_source_id(tilePos)
+	if tileId == 3:
+		canSticky=true
+	tilePos.x-=4;
+	tileId = tilemap.get_cell_source_id(tilePos)
+	if tileId == 3:
+		canSticky = true
+
+	var vertical_direction = Input.get_axis("move_up", "move_down")
+	if canSticky:
+		velocity.y=maxSpeed*vertical_direction
 
 	var wasOnFloor = is_on_floor()
 	move_and_slide()

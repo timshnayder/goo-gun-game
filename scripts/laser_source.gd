@@ -28,7 +28,6 @@ func _process(delta: float) -> void:
 		
 	
 	var laser_end = ray.get_collision_point()
-	print(laser_end	)
 		#player.kill()
 	line.points = [Vector2.ZERO, laser_end-global_position]	
 	
