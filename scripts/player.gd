@@ -7,7 +7,8 @@ extends CharacterBody2D
 @onready var gameover = $Camera2D/CanvasLayer/gameover
 @onready var sprite = $Sprite2D
 @onready var hotbar = $Camera2D/CanvasLayer/hotbar
-@onready var timer = $Timer
+@onready var coyoteTimer = $CoyoteTimer
+@onready var gooTimer = $GooTimer
 @export var maxSpeed = 300
 @export var gravity = 30
 @export var maxGravity = 700
@@ -19,6 +20,8 @@ extends CharacterBody2D
 
 var isDead = false
 var gooselect = 1
+var lastGoo = 0;
+var gooToRemember = 0;
 
 func kill():
 	isDead = true
@@ -35,29 +38,54 @@ func _on_ready():
 func _physics_process(delta):
 	if isDead: 
 		return
-	if is_on_floor():
-		var tilePos = tilemap.local_to_map(tilemap.to_local(position));
-		tilePos.y+=2
-		var tileId = tilemap.get_cell_source_id(tilePos)
-		if tileId == 0 || tileId == -1: # air or ground
-			accel = 30
-			maxSpeed = 300
-			jumpForce = 500
-		if tileId == 1: #blue goo
+		
+	if(!gooTimer.is_stopped()): #coyote timer for goo is currently on
+		if gooToRemember == 1:
 			accel = 10
 			maxSpeed = 300
 			jumpForce= 1100
-		if tileId == 2: #orange goo
+		elif gooToRemember == 2:
 			accel = 10
 			maxSpeed = 600
 			jumpForce= 500
+			
+	if is_on_floor():
+		if gooTimer.is_stopped(): # not coyote rn so just do normal stuff
+			var tilePos = tilemap.local_to_map(tilemap.to_local(position));
+			tilePos.y+=2
+			var tileId = tilemap.get_cell_source_id(tilePos)
+			print(lastGoo)
+			if tileId == 0 || tileId == -1: # air or ground
+				if lastGoo != 0:
+					gooTimer.start()
+					gooToRemember = lastGoo
+				else:
+					accel = 30
+					maxSpeed = 300
+					jumpForce = 500
+				
+				lastGoo = 0
+				
+			if tileId == 1: #blue goo
+				accel = 10
+				maxSpeed = 300
+				jumpForce= 1100
+				
+				lastGoo = 1
+			if tileId == 2: #orange goo
+				accel = 10
+				maxSpeed = 600
+				jumpForce= 500
+				
+				lastGoo = 2
+		
 		
 	if !is_on_floor():
 		velocity.y += gravity
 		if(velocity.y > maxGravity):
 			velocity.y=maxGravity
 	
-	if Input.is_action_pressed("jump") && (is_on_floor() || !timer.is_stopped()):
+	if Input.is_action_pressed("jump") && (is_on_floor() || !coyoteTimer.is_stopped()):
 		velocity.y = -jumpForce
 		
 	if Input.is_action_just_pressed("changeL"):
@@ -105,4 +133,4 @@ func _physics_process(delta):
 	var wasOnFloor = is_on_floor()
 	move_and_slide()
 	if wasOnFloor && !is_on_floor() && !Input.is_action_pressed("jump"):
-		timer.start();
+		coyoteTimer.start();
