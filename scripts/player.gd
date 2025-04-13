@@ -89,23 +89,25 @@ func _physics_process(delta):
 		velocity.y = -jumpForce
 		
 	if Input.is_action_just_pressed("changeL"):
-		gooselect += 1
-		if (gooselect > 2):
-			gooselect = 0
+		gooselect -= 1
+		if (gooselect < 1):
+			gooselect = 3
 		hotbar.update(gooselect)
 			
 	if Input.is_action_just_pressed("changeR"):
-		gooselect -= 1
-		if (gooselect < 1):
-			gooselect = 2
+		gooselect += 1
+		if (gooselect > 3):
+			gooselect = 1
 		hotbar.update(gooselect)
 				
 	if Input.is_action_pressed("shoot-blue"):
 		var goo = blueGoo.instantiate()
 		if gooselect == 1:
-			goo = stickyGoo.instantiate()
+			goo = blueGoo.instantiate()
 		elif gooselect == 2:
 			goo = orangeGoo.instantiate()
+		elif gooselect == 3:
+			goo = stickyGoo.instantiate()
 		goo.pos=global_position
 		goo.rota=gun.rotation
 		get_parent().add_child(goo)

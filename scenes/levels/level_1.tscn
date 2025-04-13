@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://bupvn3dcn0l68"]
+[gd_scene load_steps=21 format=4 uid="uid://bupvn3dcn0l68"]
 
 [ext_resource type="PackedScene" uid="uid://cffohq6xns0dd" path="res://scenes/Laser_Source.tscn" id="1_s8va5"]
 [ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://scenes/player.tscn" id="1_t2orq"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bpi1kn40rvpxi" path="res://scenes/next_level.tscn" id="3_kx6vr"]
 [ext_resource type="Texture2D" uid="uid://beljkf6wewr71" path="res://terrain-tilemap-orange.png" id="4_ght5n"]
 [ext_resource type="PackedScene" uid="uid://mrh1txgwsw53" path="res://scenes/hotbar.tscn" id="6_sk5k4"]
+[ext_resource type="Texture2D" uid="uid://dobprtjp6dxp0" path="res://terrain-tilemap-purple.png" id="8_qxy0u"]
 [ext_resource type="PackedScene" uid="uid://b7wk7bae8r46c" path="res://scenes/gameover.tscn" id="8_s8va5"]
 [ext_resource type="PackedScene" uid="uid://dmslvkc2w2qva" path="res://scenes/movingPlatform.tscn" id="9_dga24"]
 
@@ -451,8 +452,8 @@ texture = ExtResource("4_ght5n")
 19:10/0 = 0
 20:10/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dga24"]
-texture = ExtResource("2_1yh5i")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_excbq"]
+texture = ExtResource("8_qxy0u")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -602,7 +603,7 @@ texture = ExtResource("2_1yh5i")
 sources/0 = SubResource("TileSetAtlasSource_xuyal")
 sources/1 = SubResource("TileSetAtlasSource_rx2iq")
 sources/2 = SubResource("TileSetAtlasSource_tkvdi")
-sources/3 = SubResource("TileSetAtlasSource_dga24")
+sources/3 = SubResource("TileSetAtlasSource_excbq")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onfbu"]
 size = Vector2(1696, 160)
