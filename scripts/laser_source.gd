@@ -6,7 +6,6 @@ extends Node2D
 
 var rotating_forward: bool = true
 
-
 @onready var ray = $LaserRay
 @onready var line = $LaserLine
 @onready var player = $"../Player"
@@ -25,12 +24,15 @@ func _process(delta: float) -> void:
 		if ray.rotation_degrees <= start_angle_deg:
 			ray.rotation_degrees = start_angle_deg
 			rotating_forward = true
-		
+	
+	# Only add this collision check (keep your existing line drawing)
+	if ray.is_colliding() and ray.get_collider() == player:
+		player.kill()
 	
 	var laser_end = ray.get_collision_point()
-	print(laser_end	)
-		#player.kill()
-	line.points = [Vector2.ZERO, laser_end-global_position]	
+	line.points = [Vector2.ZERO, laser_end-global_position]
+
+	
 	
 	
 	
