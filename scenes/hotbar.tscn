@@ -58,3 +58,12 @@ offset_right = 103.0
 offset_bottom = 73.0
 theme_override_font_sizes/font_size = 30
 text = "speedy"
+
+[node name="sticky" type="Label" parent="Panel/Panel"]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "stikcy"
+horizontal_alignment = 1
+vertical_alignment = 1
