@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=4 uid="uid://cei6q21pvhixi"]
 
 [ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://scenes/player.tscn" id="1_ut44y"]
-[ext_resource type="Texture2D" uid="uid://be4vvg1dbt1od" path="res://terrain-tilemap.png" id="2_wpnnl"]
+[ext_resource type="Texture2D" uid="uid://be4vvg1dbt1od" path="res://assets/terrain-tilemap.png" id="2_wpnnl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tjf38"]
 size = Vector2(1156.5, 209.5)

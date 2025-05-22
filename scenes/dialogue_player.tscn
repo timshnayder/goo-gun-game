@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://drw7n846o385a"]
+
+[ext_resource type="Script" uid="uid://cjr53mlu8ukly" path="res://scenes/dialogue_player.gd" id="1_anurw"]
+
+[node name="DialoguePlayer" type="CanvasLayer"]
+script = ExtResource("1_anurw")
+scene_text_file = "res://assets/b.json"
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 495.0
+offset_top = 368.0
+offset_right = 865.0
+offset_bottom = 457.0
+
+[node name="Textlabel" type="Label" parent="."]
+anchors_preset = -1
+anchor_right = 0.277
+anchor_bottom = 0.143
+offset_left = 536.0
+offset_top = 389.0
+offset_right = 448.896
+offset_bottom = 345.336
+text = "
+"
+autowrap_mode = 3

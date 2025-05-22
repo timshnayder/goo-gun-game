@@ -17,10 +17,8 @@ func _aim():
 
 func _check_player_collision():
 	if ray_cast.get_collider() == player and timer.is_stopped():
-		print("found")
 		timer.start()
 	elif ray_cast.get_collider() != player and not timer.is_stopped():
-		print("not found")
 		timer.stop()
 
 func _on_timer_timeout():
