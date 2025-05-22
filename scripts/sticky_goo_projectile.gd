@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@onready var tilemap = $"../MapLayers/Surfaces"
+@onready var tilemap = $"../TileMapNode/Surfaces"
 
 var pos:Vector2
 var rota:float
@@ -15,15 +15,15 @@ func _ready() -> void:
 	velocity=Vector2(speed,0).rotated(rota)
 	velocity*=20
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	velocity.y+=gravity
 	if(velocity.y > maxGravity):
 		velocity.y = maxGravity
-	
 	if is_on_floor():
 		var tilePos = tilemap.local_to_map(tilemap.to_local(position));
+		
 		tilePos.y+=1;
-		tilemap.set_cell(tilePos,2,tilemap.get_cell_atlas_coords(tilePos))
+		tilemap.set_cell(tilePos,3,tilemap.get_cell_atlas_coords(tilePos))
 		$GPUParticles2D.emitting = true
 		$Sprite2D.visible=false
 		await get_tree().create_timer(0.2).timeout
@@ -31,7 +31,7 @@ func _physics_process(delta):
 	if is_on_ceiling():
 		var tilePos = tilemap.local_to_map(tilemap.to_local(position));
 		tilePos.y-=1;
-		tilemap.set_cell(tilePos,2,tilemap.get_cell_atlas_coords(tilePos))
+		tilemap.set_cell(tilePos,3,tilemap.get_cell_atlas_coords(tilePos))
 		$GPUParticles2D.emitting = true
 		$Sprite2D.visible=false
 		await get_tree().create_timer(0.2).timeout
@@ -39,9 +39,9 @@ func _physics_process(delta):
 	if is_on_wall():
 		var tilePos = tilemap.local_to_map(tilemap.to_local(position));
 		tilePos.x+=1;
-		tilemap.set_cell(tilePos,2,tilemap.get_cell_atlas_coords(tilePos))
+		tilemap.set_cell(tilePos,3,tilemap.get_cell_atlas_coords(tilePos))
 		tilePos.x-=2;
-		tilemap.set_cell(tilePos,2,tilemap.get_cell_atlas_coords(tilePos))
+		tilemap.set_cell(tilePos,3,tilemap.get_cell_atlas_coords(tilePos))
 		$GPUParticles2D.emitting = true
 		$Sprite2D.visible=false
 		await get_tree().create_timer(0.2).timeout
