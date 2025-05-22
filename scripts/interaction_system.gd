@@ -22,7 +22,6 @@ func _process(delta):
 	if curINT and canInteract:
 		curINT.sort_custom(proxSort)
 		if curINT[0].interactable:
-			interactbutton.position = curINT[0].global_position + Vector2(0,-50)
 			interactbutton.show()
 	else:
 		interactbutton.hide()

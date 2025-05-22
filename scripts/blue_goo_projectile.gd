@@ -39,10 +39,9 @@ func _physics_process(_delta):
 		queue_free()
 	if is_on_wall():
 		var tilePos = tilemap.local_to_map(tilemap.to_local(position));
-		if(velocity.x < 0):
-			tilePos.x+=1
-		else:
-			tilePos.x-=1
+		tilePos.x+=1;
+		tilemap.set_cell(tilePos,1,tilemap.get_cell_atlas_coords(tilePos))
+		tilePos.x-=2;
 		tilemap.set_cell(tilePos,1,tilemap.get_cell_atlas_coords(tilePos))
 		$GPUParticles2D.emitting = true
 		$Sprite2D.visible=false

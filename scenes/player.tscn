@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://dda73mlgsy70m" path="res://scenes/interaction_system.tscn" id="9_ur7pv"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_smehm"]
-radius = 16.1245
+radius = 8.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3v2ag"]
 atlas = ExtResource("6_ur7pv")
@@ -224,8 +224,7 @@ wait_time = 0.2
 one_shot = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(601, -113)
-offset = Vector2(-550, 0)
+position = Vector2(0, -63)
 zoom = Vector2(2, 2)
 position_smoothing_enabled = true
 
@@ -269,9 +268,10 @@ visible = false
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(1, 0)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_jc3p3")
 animation = &"jump"
+speed_scale = 2.0
 
 [node name="InteractionSystem" parent="." instance=ExtResource("9_ur7pv")]
 
