@@ -450,8 +450,8 @@ texture = ExtResource("6_s8va5")
 
 [sub_resource type="TileSet" id="TileSet_1hduy"]
 sources/0 = SubResource("TileSetAtlasSource_xuyal")
-sources/3 = SubResource("TileSetAtlasSource_dga24")
-sources/4 = SubResource("TileSetAtlasSource_qxy0u")
+sources/1 = SubResource("TileSetAtlasSource_dga24")
+sources/2 = SubResource("TileSetAtlasSource_qxy0u")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onfbu"]
 size = Vector2(1696, 160)
