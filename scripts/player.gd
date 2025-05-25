@@ -138,13 +138,11 @@ func _physics_process(delta):
 	
 	var canSticky = false
 	var tilePos = tilemap.local_to_map(tilemap.to_local(position));
-	tilePos.x+=2
-	var tileId = tilemap.get_cell_source_id(tilePos)
-	if tileId == 3:
+	tilePos.x+=1
+	if tilemap.get_cell_source_id(tilePos) == 3:
 		canSticky=true
-	tilePos.x-=4;
-	tileId = tilemap.get_cell_source_id(tilePos)
-	if tileId == 3:
+	tilePos.x-=99;
+	if tilemap.get_cell_source_id(tilePos) == 3:
 		canSticky = true
 
 	var vertical_direction = Input.get_axis("move_up", "move_down")
