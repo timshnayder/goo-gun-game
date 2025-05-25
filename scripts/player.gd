@@ -4,7 +4,7 @@ extends CharacterBody2D
 @onready var orangeGoo = preload("res://scenes/orange_goo_projectile.tscn")
 @onready var stickyGoo = preload("res://scenes/sticky_goo_projectile.tscn")
 @onready var gun = $Gun
-@onready var tilemap = $"../MapLayers/Surfaces"
+@onready var tilemap = $"../MapLayers/Collision"
 @onready var gameover = $Camera2D/CanvasLayer/gameover
 @onready var hotbar = $Camera2D/CanvasLayer/hotbar
 @onready var coyoteTimer = $CoyoteTimer
@@ -13,9 +13,9 @@ extends CharacterBody2D
 @export var maxSpeed = 300
 @export var gravity = 30
 @export var maxGravity = 700
-@export var jumpForce = 500
+@export var jumpForce = 600
 @export var Freeze = false
-@export var accel = 30
+@export var accel = 10
 @export var airresist = 5
 
 
@@ -30,10 +30,8 @@ func kill():
 	gun.hide()
 	gameover.show() 
 	gameover.get_node("retry").grab_focus()
-	print("visible!")
 	
 func _on_ready():
-	print("True")
 	gameover.hide()
 
 func _physics_process(delta):
@@ -48,7 +46,7 @@ func _physics_process(delta):
 		elif gooToRemember == 2:
 			accel = 10
 			maxSpeed = 600
-			jumpForce= 500
+			jumpForce= 600
 			
 	if is_on_floor():
 		if velocity.x != 0:
@@ -65,7 +63,6 @@ func _physics_process(delta):
 			var tilePos = tilemap.local_to_map(tilemap.to_local(position));
 			tilePos.y+=1
 			var tileId = tilemap.get_cell_source_id(tilePos)
-			print(tileId)
 			if tileId == 0 || tileId == -1: # air or ground
 				if lastGoo != 0:
 					gooTimer.start()
@@ -78,7 +75,6 @@ func _physics_process(delta):
 				lastGoo = 0
 				
 			if tileId == 1: #blue goo
-				print("c")
 				accel = 10
 				maxSpeed = 300
 				jumpForce= 1100

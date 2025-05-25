@@ -1,7 +1,7 @@
 extends Control
-@onready var jump = $Panel/Panel/jmp
-@onready var speed = $Panel/Panel/sped
-@onready var sticky = $Panel/Panel/sticky
+@onready var jump = $Toggle/jmp
+@onready var speed = $Toggle/sped
+@onready var sticky = $Toggle/sticky
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

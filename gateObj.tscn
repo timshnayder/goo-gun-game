@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8366vf1g8ajq"]
+
+[ext_resource type="Texture2D" uid="uid://2567ckhxhn5r" path="res://assets/Free Industrial Zone Tileset/1 Tiles/IndustrialTile_61.png" id="1_8xot5"]
+[ext_resource type="Script" uid="uid://cdr3ys7y41h26" path="res://gate_obj.gd" id="1_l5ila"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l5ila"]
+size = Vector2(30, 131)
+
+[node name="Gate" type="AnimatableBody2D"]
+script = ExtResource("1_l5ila")
+
+[node name="IndustrialTile61" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(1, 4.09375)
+texture = ExtResource("1_8xot5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_l5ila")

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="goo-gun-game"
-run/main_scene="uid://bq4rums1cex7f"
+run/main_scene="uid://bw5do6tu4lkyn"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://assets/icon.svg"
 
