@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cq18o6yr3goc6"
-path="res://.godot/imported/Jump Animation 48x48.png-fbb742440841505db99a6ebf0b723b15.ctex"
+path="res://.godot/imported/Jump Animation 48x48.png-f7c7ccd651cd76c1e126380c3e7e7124.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/spritesheets/Jump Animation 48x48.png"
-dest_files=["res://.godot/imported/Jump Animation 48x48.png-fbb742440841505db99a6ebf0b723b15.ctex"]
+source_file="res://Assets/Spritesheets/Jump Animation 48x48.png"
+dest_files=["res://.godot/imported/Jump Animation 48x48.png-f7c7ccd651cd76c1e126380c3e7e7124.ctex"]
 
 [params]
 

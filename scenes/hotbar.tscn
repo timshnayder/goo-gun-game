@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://mrh1txgwsw53"]
 
-[ext_resource type="Script" uid="uid://worhnrgnev5s" path="res://scripts/hotbar.gd" id="1_o2b15"]
-[ext_resource type="FontFile" uid="uid://d266cv4odlsd3" path="res://assets/pansyhand.ttf" id="2_2n1yv"]
-[ext_resource type="Texture2D" uid="uid://dqwiaa24xevfb" path="res://assets/Jump_Boost_JE2_BE2.png" id="3_vu8xs"]
-[ext_resource type="Texture2D" uid="uid://b41btn1gru5p4" path="res://assets/pd2.png" id="4_uhbbb"]
+[ext_resource type="Script" uid="uid://worhnrgnev5s" path="res://Scripts/hotbar.gd" id="1_o2b15"]
+[ext_resource type="FontFile" uid="uid://d266cv4odlsd3" path="res://Assets/Fonts/pansyhand.ttf" id="2_2n1yv"]
+[ext_resource type="Texture2D" path="res://assets/Jump_Boost_JE2_BE2.png" id="3_vu8xs"]
+[ext_resource type="Texture2D" path="res://assets/pd2.png" id="4_uhbbb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ewps"]
 bg_color = Color(0.33442, 0.537219, 1, 1)

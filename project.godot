@@ -13,11 +13,11 @@ config_version=5
 config/name="goo-gun-game"
 run/main_scene="uid://bw5do6tu4lkyn"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://assets/icon.svg"
+config/icon="res://Assets/icon.svg"
 
 [autoload]
 
-SignalBus="*res://scripts/SignalBus.gd"
+SignalBus="*res://Scripts/SignalBus.gd"
 
 [display]
 

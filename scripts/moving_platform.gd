@@ -4,7 +4,7 @@ extends Node2D
 @export var endX: float
 @export var moveDir: int = 1
 
-@onready var player = $"../Player"
+@onready var player = $"../../Player"
 
 var onPlatform: bool = false;
 
@@ -14,7 +14,6 @@ var moveAmount: float = 2
 
 func _ready() -> void:
 	xPos = startX
-	player = get_parent().find_child("Player")
 
 func _process(delta: float) -> void:
 	if xPos >= endX:
@@ -31,7 +30,6 @@ func _process(delta: float) -> void:
 
 
 func _on_area_2d_2_body_entered(body) -> void:
-	print(body.get_groups())
 	if body is CharacterBody2D:
 		print("hi")
 		onPlatform = true
