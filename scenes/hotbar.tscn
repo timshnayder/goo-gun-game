@@ -1,9 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://mrh1txgwsw53"]
+[gd_scene load_steps=6 format=3 uid="uid://mrh1txgwsw53"]
 
 [ext_resource type="Script" uid="uid://worhnrgnev5s" path="res://Scripts/hotbar.gd" id="1_o2b15"]
 [ext_resource type="FontFile" uid="uid://d266cv4odlsd3" path="res://Assets/Fonts/pansyhand.ttf" id="2_2n1yv"]
-[ext_resource type="Texture2D" path="res://assets/Jump_Boost_JE2_BE2.png" id="3_vu8xs"]
-[ext_resource type="Texture2D" path="res://assets/pd2.png" id="4_uhbbb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ewps"]
 bg_color = Color(0.33442, 0.537219, 1, 1)
@@ -63,13 +61,6 @@ offset_right = 68.0
 offset_bottom = 57.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_1ewps")
 
-[node name="Sprite2D" type="Sprite2D" parent="Toggle/jmp"]
-visible = false
-texture_filter = 1
-position = Vector2(28, 23)
-scale = Vector2(0.208333, 0.216667)
-texture = ExtResource("3_vu8xs")
-
 [node name="sped" type="Panel" parent="Toggle"]
 texture_filter = 1
 layout_mode = 0
@@ -78,13 +69,6 @@ offset_top = 10.0
 offset_right = 68.0
 offset_bottom = 57.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_wceku")
-
-[node name="Sprite2D" type="Sprite2D" parent="Toggle/sped"]
-visible = false
-texture_filter = 1
-position = Vector2(29, 23)
-scale = Vector2(0.208333, 0.216667)
-texture = ExtResource("4_uhbbb")
 
 [node name="sticky" type="Panel" parent="Toggle"]
 texture_filter = 1
