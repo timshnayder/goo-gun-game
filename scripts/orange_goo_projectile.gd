@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@onready var tilemap = $"../MapLayers/Surfaces"
+@onready var tilemap = $"../MapLayers/Collision"
 
 var pos:Vector2
 var rota:float

@@ -1,6 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://mrh1txgwsw53"]
+[gd_scene load_steps=8 format=3 uid="uid://mrh1txgwsw53"]
 
 [ext_resource type="Script" uid="uid://worhnrgnev5s" path="res://scripts/hotbar.gd" id="1_o2b15"]
+[ext_resource type="FontFile" uid="uid://d266cv4odlsd3" path="res://assets/pansyhand.ttf" id="2_2n1yv"]
+[ext_resource type="Texture2D" uid="uid://dqwiaa24xevfb" path="res://assets/Jump_Boost_JE2_BE2.png" id="3_vu8xs"]
+[ext_resource type="Texture2D" uid="uid://b41btn1gru5p4" path="res://assets/pd2.png" id="4_uhbbb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ewps"]
+bg_color = Color(0.33442, 0.537219, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wceku"]
+bg_color = Color(1, 0.501961, 0.192157, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iapdy"]
+bg_color = Color(0.908552, 0.407151, 0.566634, 1)
 
 [node name="hotbar" type="Control"]
 visibility_layer = 16
@@ -17,53 +29,68 @@ script = ExtResource("1_o2b15")
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
 offset_left = 5.0
-offset_top = 499.0
-offset_right = 518.0
-offset_bottom = 646.0
+offset_top = 539.0
+offset_right = 311.0
+offset_bottom = 638.0
 
-[node name="Label" type="Label" parent="Panel"]
+[node name="Label" type="Label" parent="."]
+process_mode = 1
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.154
 anchor_bottom = 0.07
-offset_left = 9.0
-offset_top = 43.0
-offset_right = 257.592
-offset_bottom = 101.71
-theme_override_font_sizes/font_size = 50
-text = "goo selected:"
+offset_left = 18.0
+offset_top = 542.0
+offset_right = 134.592
+offset_bottom = 600.64
+theme_override_fonts/font = ExtResource("2_2n1yv")
+theme_override_font_sizes/font_size = 100
+text = "Mixture:"
 
-[node name="Panel" type="Panel" parent="Panel"]
+[node name="Toggle" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 344.0
-offset_top = 30.0
-offset_right = 468.0
-offset_bottom = 125.0
+offset_left = 220.0
+offset_top = 558.0
+offset_right = 294.0
+offset_bottom = 623.0
 
-[node name="jmp" type="Label" parent="Panel/Panel"]
+[node name="jmp" type="Panel" parent="Toggle"]
+texture_filter = 1
 layout_mode = 0
-offset_left = 12.0
-offset_top = 31.0
-offset_right = 103.0
-offset_bottom = 73.0
-theme_override_font_sizes/font_size = 30
-text = "jumpy"
+offset_left = 5.0
+offset_top = 10.0
+offset_right = 68.0
+offset_bottom = 57.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1ewps")
 
-[node name="sped" type="Label" parent="Panel/Panel"]
+[node name="Sprite2D" type="Sprite2D" parent="Toggle/jmp"]
 visible = false
-layout_mode = 0
-offset_left = 12.0
-offset_top = 31.0
-offset_right = 103.0
-offset_bottom = 73.0
-theme_override_font_sizes/font_size = 30
-text = "speedy"
+texture_filter = 1
+position = Vector2(28, 23)
+scale = Vector2(0.208333, 0.216667)
+texture = ExtResource("3_vu8xs")
 
-[node name="sticky" type="Label" parent="Panel/Panel"]
-visible = false
+[node name="sped" type="Panel" parent="Toggle"]
+texture_filter = 1
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "stikcy"
-horizontal_alignment = 1
-vertical_alignment = 1
+offset_left = 5.0
+offset_top = 10.0
+offset_right = 68.0
+offset_bottom = 57.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wceku")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toggle/sped"]
+visible = false
+texture_filter = 1
+position = Vector2(29, 23)
+scale = Vector2(0.208333, 0.216667)
+texture = ExtResource("4_uhbbb")
+
+[node name="sticky" type="Panel" parent="Toggle"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 5.0
+offset_top = 10.0
+offset_right = 68.0
+offset_bottom = 57.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_iapdy")

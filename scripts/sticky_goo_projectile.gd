@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@onready var tilemap = $"../MapLayers/Surfaces"
+@onready var tilemap = $"../MapLayers/Collision"
 
 var pos:Vector2
 var rota:float
@@ -19,6 +19,7 @@ func _physics_process(_delta):
 	velocity.y+=gravity
 	if(velocity.y > maxGravity):
 		velocity.y = maxGravity
+	
 	if is_on_floor():
 		var tilePos = tilemap.local_to_map(tilemap.to_local(position));
 		

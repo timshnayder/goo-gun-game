@@ -9,7 +9,7 @@ extends Node2D
 var onPlatform: bool = false;
 
 var xPos: float
-var moveAmount: float = 8
+var moveAmount: float = 2
 
 
 func _ready() -> void:
@@ -31,9 +31,12 @@ func _process(delta: float) -> void:
 
 
 func _on_area_2d_2_body_entered(body) -> void:
-	if body.is_in_group("Player"):
+	print(body.get_groups())
+	if body is CharacterBody2D:
+		print("hi")
 		onPlatform = true
 
 
 func _on_area_2d_2_body_exited(body) -> void:
+	print("bye")
 	onPlatform = false
