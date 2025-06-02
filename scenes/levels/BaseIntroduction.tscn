@@ -1,11 +1,11 @@
-[gd_scene load_steps=13 format=4 uid="uid://bq4rums1cex7f"]
+[gd_scene load_steps=13 format=4 uid="uid://dfjtlf6dywnme"]
 
 [ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://scenes/player.tscn" id="1_lgtu8"]
 [ext_resource type="Texture2D" uid="uid://gpqagkn3cult" path="res://assets/Tilemap/tilemap.png" id="2_q32wy"]
 [ext_resource type="Texture2D" uid="uid://b7bvcon0d8ih0" path="res://assets/Tilemap/tilemapOrange.png" id="5_oq6h0"]
 [ext_resource type="Texture2D" uid="uid://d3wlgyivn2iwm" path="res://assets/Tilemap/tilemapBlue.png" id="6_qffud"]
-[ext_resource type="PackedScene" uid="uid://bte86ywoplew7" path="res://scenes/interaction_node.tscn" id="7_oq6h0"]
-[ext_resource type="PackedScene" uid="uid://drw7n846o385a" path="res://scenes/dialogue_player.tscn" id="8_qffud"]
+[ext_resource type="PackedScene" path="res://scenes/interaction_node.tscn" id="7_oq6h0"]
+[ext_resource type="PackedScene" path="res://scenes/dialogue_player.tscn" id="8_qffud"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t86nk"]
 texture = ExtResource("2_q32wy")
