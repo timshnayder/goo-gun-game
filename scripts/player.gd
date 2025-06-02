@@ -23,6 +23,7 @@ var isDead = false
 var gooselect = 1
 var lastGoo = 0;
 var gooToRemember = 0;
+var onLadder = false
 
 func kill():
 	isDead = true
@@ -33,6 +34,13 @@ func kill():
 	
 func _on_ready():
 	gameover.hide()
+	
+func entered_ladder():
+	onLadder=true;
+	
+func exited_ladder():
+	onLadder=false;
+	
 
 func _physics_process(delta):
 	if isDead: 
@@ -136,7 +144,7 @@ func _physics_process(delta):
 	else: 
 		velocity.x+=accel*horizontal_direction
 	
-	var canSticky = false
+	var canSticky = false;
 	var tilePos = tilemap.local_to_map(tilemap.to_local(position));
 	tilePos.x+=1
 	if tilemap.get_cell_source_id(tilePos) == 3:
@@ -146,7 +154,7 @@ func _physics_process(delta):
 		canSticky = true
 
 	var vertical_direction = Input.get_axis("move_up", "move_down")
-	if canSticky:
+	if canSticky or onLadder:
 		velocity.y=maxSpeed*vertical_direction
 
 	var wasOnFloor = is_on_floor()
