@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bsw2vk4tan8fx"]
 
-[ext_resource type="Script" uid="uid://cr3aohv28y3q" path="res://scripts/gun.gd" id="1_md7j3"]
-[ext_resource type="Texture2D" uid="uid://vsgb0r3dopbk" path="res://assets/icon.svg" id="2_lb5qr"]
+[ext_resource type="Script" uid="uid://cr3aohv28y3q" path="res://Scripts/gun.gd" id="1_md7j3"]
+[ext_resource type="Texture2D" uid="uid://vsgb0r3dopbk" path="res://Assets/icon.svg" id="2_lb5qr"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_md7j3")
