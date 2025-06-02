@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://g7t2wxwc2q4f"
-path="res://.godot/imported/keyboard_asterisk.png-68545dad44ce2223fdd5192cf0e0eb91.ctex"
+path="res://.godot/imported/keyboard_asterisk.png-97eb2f0c514894e8fca0464fbc86fe39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI/Default/keyboard_asterisk.png"
-dest_files=["res://.godot/imported/keyboard_asterisk.png-68545dad44ce2223fdd5192cf0e0eb91.ctex"]
+source_file="res://assets/UI/Default/keyboard_asterisk.png"
+dest_files=["res://.godot/imported/keyboard_asterisk.png-97eb2f0c514894e8fca0464fbc86fe39.ctex"]
 
 [params]
 

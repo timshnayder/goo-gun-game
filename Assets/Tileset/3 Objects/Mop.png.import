@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dm2wvqmcfvjvh"
-path="res://.godot/imported/Mop.png-74506637c435b2c8bdc081db4b13893c.ctex"
+path="res://.godot/imported/Mop.png-f04ee53ff6f81def782dc08b20eca7a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tileset/3 Objects/Mop.png"
-dest_files=["res://.godot/imported/Mop.png-74506637c435b2c8bdc081db4b13893c.ctex"]
+source_file="res://assets/Tileset/3 Objects/Mop.png"
+dest_files=["res://.godot/imported/Mop.png-f04ee53ff6f81def782dc08b20eca7a2.ctex"]
 
 [params]
 

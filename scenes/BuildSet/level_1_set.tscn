@@ -1,14 +1,14 @@
 [gd_scene load_steps=22 format=4 uid="uid://bw5do6tu4lkyn"]
 
-[ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://Scenes/player.tscn" id="1_k4jy0"]
-[ext_resource type="Texture2D" uid="uid://b0ucebodi4b6g" path="res://Assets/Tileset/2 Background/Background.png" id="1_t7w1r"]
-[ext_resource type="PackedScene" uid="uid://drw7n846o385a" path="res://Scenes/dialogue_player.tscn" id="2_xtu54"]
-[ext_resource type="Texture2D" uid="uid://cy4le87c5pe45" path="res://Assets/Tileset/1 Tiles/INDUSTRIALSET.png" id="2_y6wdo"]
-[ext_resource type="PackedScene" uid="uid://b8366vf1g8ajq" path="res://Scenes/gateObj.tscn" id="4_4sswc"]
-[ext_resource type="PackedScene" uid="uid://dmslvkc2w2qva" path="res://Scenes/movingPlatform.tscn" id="4_nhgg2"]
-[ext_resource type="PackedScene" uid="uid://bpi1kn40rvpxi" path="res://Scenes/next_level.tscn" id="5_hstma"]
-[ext_resource type="PackedScene" uid="uid://bjcaf33f1qxn8" path="res://Scenes/ladderObj.tscn" id="7_yuf0x"]
-[ext_resource type="PackedScene" uid="uid://1e2bs40q2woh" path="res://Scenes/Signature.tscn" id="9_3mkfn"]
+[ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://scenes/player.tscn" id="1_k4jy0"]
+[ext_resource type="Texture2D" uid="uid://b0ucebodi4b6g" path="res://assets/Tileset/2 Background/Background.png" id="1_t7w1r"]
+[ext_resource type="PackedScene" uid="uid://drw7n846o385a" path="res://scenes/dialogue_player.tscn" id="2_xtu54"]
+[ext_resource type="Texture2D" uid="uid://cy4le87c5pe45" path="res://assets/Tileset/1 Tiles/INDUSTRIALSET.png" id="2_y6wdo"]
+[ext_resource type="PackedScene" uid="uid://sjnrudub224c" path="res://scenes/gateObj.tscn" id="4_4sswc"]
+[ext_resource type="PackedScene" uid="uid://dmslvkc2w2qva" path="res://scenes/movingPlatform.tscn" id="4_nhgg2"]
+[ext_resource type="PackedScene" uid="uid://bpi1kn40rvpxi" path="res://scenes/next_level.tscn" id="5_hstma"]
+[ext_resource type="PackedScene" path="res://scenes/ladderObj.tscn" id="7_yuf0x"]
+[ext_resource type="PackedScene" path="res://Scenes/Signature.tscn" id="9_3mkfn"]
 
 [sub_resource type="Animation" id="Animation_4sswc"]
 length = 0.001
@@ -429,6 +429,7 @@ texture_region_size = Vector2i(32, 32)
 16:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 17:0/0 = 0
 17:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+17:0/0/physics_layer_0/polygon_0/one_way = true
 18:0/0 = 0
 18:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 19:0/0 = 0
@@ -447,6 +448,7 @@ texture_region_size = Vector2i(32, 32)
 25:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 26:0/0 = 0
 26:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+26:0/0/physics_layer_0/polygon_0/one_way = true
 27:0/0 = 0
 27:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 28:0/0 = 0
@@ -593,24 +595,33 @@ texture_region_size = Vector2i(32, 32)
 10:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 11:2/0 = 0
 11:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+11:2/0/physics_layer_0/polygon_0/one_way = true
 12:2/0 = 0
 12:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 13:2/0 = 0
 13:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+13:2/0/physics_layer_0/polygon_0/one_way = true
 14:2/0 = 0
 14:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+14:2/0/physics_layer_0/polygon_0/one_way = true
 15:2/0 = 0
 15:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+15:2/0/physics_layer_0/polygon_0/one_way = true
 16:2/0 = 0
 16:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+16:2/0/physics_layer_0/polygon_0/one_way = true
 17:2/0 = 0
 17:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+17:2/0/physics_layer_0/polygon_0/one_way = true
 18:2/0 = 0
 18:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+18:2/0/physics_layer_0/polygon_0/one_way = true
 19:2/0 = 0
 19:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+19:2/0/physics_layer_0/polygon_0/one_way = true
 20:2/0 = 0
 20:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+20:2/0/physics_layer_0/polygon_0/one_way = true
 21:2/0 = 0
 21:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 22:2/0 = 0

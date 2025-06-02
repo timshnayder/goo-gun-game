@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://df1cjyrm3m3t3"
-path="res://.godot/imported/Barrel3.png-1aed819c494d8a0d58208c54947db390.ctex"
+path="res://.godot/imported/Barrel3.png-febf851390b783d181274c87c33c6fbd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tileset/3 Objects/Barrel3.png"
-dest_files=["res://.godot/imported/Barrel3.png-1aed819c494d8a0d58208c54947db390.ctex"]
+source_file="res://assets/Tileset/3 Objects/Barrel3.png"
+dest_files=["res://.godot/imported/Barrel3.png-febf851390b783d181274c87c33c6fbd.ctex"]
 
 [params]
 
