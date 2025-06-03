@@ -5,7 +5,7 @@ extends CanvasLayer
 var scene_text = {}
 var selected_text = []
 var in_progress = false
-@onready var plr = $"../Player"
+@onready var plr = $"../../Player"
 @onready var background = $Panel
 @onready var text_label = $Textlabel
 
@@ -25,22 +25,22 @@ func load_scene_text():
 func show_text():
 	text_label.text = selected_text.pop_front()
 
-func next_line():
+func next_line(text_key):
 	if selected_text.size() > 0:
 		show_text()
 	else:
-		finish()
+		finish(text_key)
 
-func finish():
+func finish(text_key):
 	text_label.text = ""
 	background.visible = false
 	in_progress = false
 	plr.Freeze = false
-	SignalBus.emit_signal("dialog_finished")
+	SignalBus.emit_signal("dialog_finished", text_key)
 	
 func on_display_dialog(text_key):
 	if in_progress:
-		next_line()
+		next_line(text_key)
 	else:
 		background.visible = true
 		in_progress = true

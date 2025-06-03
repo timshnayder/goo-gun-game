@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cb0w0bsslpu3y"
-path="res://.godot/imported/Locker3.png-a8bed38b376da57cc5b542551832d083.ctex"
+path="res://.godot/imported/Locker3.png-7b78961392813cef19539036601f3631.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tileset/3 Objects/Locker3.png"
-dest_files=["res://.godot/imported/Locker3.png-a8bed38b376da57cc5b542551832d083.ctex"]
+source_file="res://Assets/Tileset/3 Objects/Locker3.png"
+dest_files=["res://.godot/imported/Locker3.png-7b78961392813cef19539036601f3631.ctex"]
 
 [params]
 

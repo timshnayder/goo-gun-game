@@ -18,7 +18,6 @@ extends CharacterBody2D
 @export var accel = 10
 @export var airresist = 5
 
-
 var isDead = false
 var gooselect = 1
 var lastGoo = 0;
@@ -101,11 +100,11 @@ func _physics_process(delta):
 		if(velocity.y > maxGravity):
 			velocity.y=maxGravity
 	
-	if Input.is_action_pressed("jump") && (is_on_floor() || !coyoteTimer.is_stopped()):
+	if Input.is_action_pressed("jump") && (is_on_floor() || !coyoteTimer.is_stopped()) && not Freeze:
 		velocity.y = -jumpForce
 		sprite.play("jump")
 		
-	if Input.is_action_just_pressed("toggle"):
+	if Input.is_action_just_pressed("toggle") && not Freeze:
 		gooselect += 1
 		if (gooselect > 3):
 			gooselect = 1

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ptcncgpb6t42"
-path="res://.godot/imported/mouse_scroll_up.png-258a21aa13a0a45f0f19cde2e23ca315.ctex"
+path="res://.godot/imported/mouse_scroll_up.png-6c84806156ac994191155fb5096b974d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/Default/mouse_scroll_up.png"
-dest_files=["res://.godot/imported/mouse_scroll_up.png-258a21aa13a0a45f0f19cde2e23ca315.ctex"]
+source_file="res://Assets/UI/Default/mouse_scroll_up.png"
+dest_files=["res://.godot/imported/mouse_scroll_up.png-6c84806156ac994191155fb5096b974d.ctex"]
 
 [params]
 

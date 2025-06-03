@@ -1,22 +1,30 @@
 extends AnimatableBody2D
 @onready var player = $"../../Player"
-@onready var animationplr = $AnimationPlayer
+@onready var animationplr = $CollisionShape2D/AnimationPlayer
+@onready var sprite = $AnimatedSprite2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	SignalBus.connect("dialog_finished", Callable(self, "unlockgate"))
 
+func unlockgate(key):
+	if key == "speaker":
+		locked = false
+	
+
+@export var locked = true
 var played = false
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var distance = global_position.distance_to(player.global_position)
-	if distance < 150:
+	if distance < 125 && not locked:
 		if not played:
-			print("h")
-			animationplr.play("move")
+			animationplr.play("open")
+			sprite.play("open")
 			played = true
-	elif distance > 300:
+	elif distance > 175 && not locked:
 		if played:
 			animationplr.play("close")
+			sprite.play("close")
 			played = false
 
 

@@ -1,27 +1,33 @@
-[gd_scene load_steps=2 format=3 uid="uid://drw7n846o385a"]
+[gd_scene load_steps=3 format=3 uid="uid://drw7n846o385a"]
 
-[ext_resource type="Script" uid="uid://cjr53mlu8ukly" path="res://scenes/dialogue_player.gd" id="1_anurw"]
+[ext_resource type="Script" uid="uid://cjr53mlu8ukly" path="res://Scenes/dialogue_player.gd" id="1_anurw"]
+[ext_resource type="FontFile" uid="uid://d266cv4odlsd3" path="res://Assets/Fonts/pansyhand.ttf" id="2_pyoyb"]
 
 [node name="DialoguePlayer" type="CanvasLayer"]
 script = ExtResource("1_anurw")
 scene_text_file = "res://assets/b.json"
 
 [node name="Panel" type="Panel" parent="."]
-visible = false
+z_index = 2
 anchors_preset = -1
 anchor_right = 0.105
 anchor_bottom = 0.064
-offset_left = 500.0
-offset_top = 500.0
-offset_right = 749.04
-offset_bottom = 547.528
+offset_left = 101.0
+offset_top = 416.0
+offset_right = 904.04
+offset_bottom = 491.528
 
 [node name="Textlabel" type="Label" parent="."]
+z_index = 2
 anchors_preset = -1
 anchor_right = 0.277
 anchor_bottom = 0.143
-offset_left = 520.0
-offset_top = 520.0
-offset_right = 432.896
-offset_bottom = 476.336
+offset_left = 121.0
+offset_top = 433.0
+offset_right = 681.896
+offset_bottom = 431.336
+theme_override_fonts/font = ExtResource("2_pyoyb")
+theme_override_font_sizes/font_size = 50
+text = "
+"
 autowrap_mode = 3
