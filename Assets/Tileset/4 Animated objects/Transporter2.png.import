@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vha48sub47st"
-path="res://.godot/imported/Transporter2.png-2186adc581e527fdd3761ebd8b68bda8.ctex"
+path="res://.godot/imported/Transporter2.png-77afd28d00325cb6a83a9b89a4cef45b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tileset/4 Animated objects/Transporter2.png"
-dest_files=["res://.godot/imported/Transporter2.png-2186adc581e527fdd3761ebd8b68bda8.ctex"]
+source_file="res://assets/Tileset/4 Animated objects/Transporter2.png"
+dest_files=["res://.godot/imported/Transporter2.png-77afd28d00325cb6a83a9b89a4cef45b.ctex"]
 
 [params]
 
