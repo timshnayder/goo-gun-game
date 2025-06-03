@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dmslvkc2w2qva"]
+[gd_scene load_steps=5 format=3 uid="uid://xgnk4162waxp"]
 
 [ext_resource type="Script" uid="uid://bvac46ybn36do" path="res://scenes/moving_platform.gd" id="1_a7n7o"]
 [ext_resource type="Texture2D" uid="uid://vsgb0r3dopbk" path="res://icon.svg" id="2_15gwc"]
@@ -19,6 +19,9 @@ texture = ExtResource("2_15gwc")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
+[node name="Timer" type="Timer" parent="StaticBody2D"]
+wait_time = 1.647
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(4, 2.5)
 shape = SubResource("RectangleShape2D_73jut")
@@ -31,5 +34,6 @@ position = Vector2(363, 41)
 position = Vector2(-361.5, -40)
 shape = SubResource("RectangleShape2D_a7n7o")
 
+[connection signal="timeout" from="StaticBody2D/Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="StaticBody2D/Area2D2" to="." method="_on_area_2d_2_body_entered"]
 [connection signal="body_exited" from="StaticBody2D/Area2D2" to="." method="_on_area_2d_2_body_exited"]
