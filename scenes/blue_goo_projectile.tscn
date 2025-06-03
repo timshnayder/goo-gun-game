@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://8v66c180t3gn"]
 
 [ext_resource type="Script" uid="uid://d1ksdiij8hxoc" path="res://scripts/blue_goo_projectile.gd" id="1_mdkua"]
-[ext_resource type="Texture2D" uid="uid://vsgb0r3dopbk" path="res://assets/icon.svg" id="2_qru3h"]
+[ext_resource type="Texture2D" uid="uid://cyb5cvjv4808l" path="res://assets/Goo/blue-goo.png" id="2_0kiel"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nuche"]
 size = Vector2(14, 14)
@@ -12,8 +12,8 @@ collision_mask = 4
 script = ExtResource("1_mdkua")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("2_qru3h")
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_0kiel")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_nuche")
