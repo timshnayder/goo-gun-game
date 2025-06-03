@@ -1,7 +1,7 @@
 [gd_scene load_steps=36 format=3 uid="uid://4724s760rio0"]
 
 [ext_resource type="Script" uid="uid://can0lntg2jr6d" path="res://scripts/player.gd" id="1_1o4hu"]
-[ext_resource type="Texture2D" uid="uid://vsgb0r3dopbk" path="res://assets/icon.svg" id="1_ur5tt"]
+[ext_resource type="Texture2D" uid="uid://vsgb0r3dopbk" path="res://exports/itch test/assets/icon.svg" id="1_ur5tt"]
 [ext_resource type="PackedScene" uid="uid://bsw2vk4tan8fx" path="res://scenes/gun.tscn" id="3_lfjsi"]
 [ext_resource type="PackedScene" uid="uid://mrh1txgwsw53" path="res://scenes/hotbar.tscn" id="4_tuyoq"]
 [ext_resource type="PackedScene" uid="uid://b7wk7bae8r46c" path="res://scenes/gameover.tscn" id="6_smehm"]
@@ -227,7 +227,7 @@ wait_time = 0.2
 one_shot = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
+zoom = Vector2(1.5, 1.5)
 position_smoothing_enabled = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera2D"]

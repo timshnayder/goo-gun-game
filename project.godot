@@ -76,3 +76,9 @@ move_down={
 2d_physics/layer_1="Obj"
 2d_physics/layer_2="Plr"
 2d_physics/layer_3="Interactions"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+textures/decals/filter=0
+textures/light_projectors/filter=0
