@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://1e2bs40q2woh"]
 
-[ext_resource type="FontFile" uid="uid://d266cv4odlsd3" path="res://Assets/Fonts/pansyhand.ttf" id="1_03l63"]
-[ext_resource type="Script" uid="uid://b4i7fyq15155v" path="res://Scenes/button.gd" id="2_ua3wk"]
+[ext_resource type="FontFile" uid="uid://d266cv4odlsd3" path="res://assets/Fonts/pansyhand.ttf" id="1_03l63"]
+[ext_resource type="Script" path="res://Scenes/button.gd" id="2_ua3wk"]
 
 [node name="Signature" type="CanvasLayer"]
 
@@ -32,7 +32,7 @@ offset_right = 193.0
 offset_bottom = 26.0
 theme_override_fonts/font = ExtResource("1_03l63")
 theme_override_font_sizes/font_size = 25
-text = "Last Updated 03/06/2025"
+text = "Last Updated 04/06/2025"
 
 [node name="Button" type="Button" parent="."]
 offset_left = 885.0
@@ -53,7 +53,7 @@ offset_right = 241.0
 offset_bottom = 22.0
 theme_override_fonts/font = ExtResource("1_03l63")
 theme_override_font_sizes/font_size = 30
-text = "Asbestos Development v1.8"
+text = "Asbestos Development v1.9"
 horizontal_alignment = 1
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
