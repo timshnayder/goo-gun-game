@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b7wk7bae8r46c"]
 
-[ext_resource type="Script" uid="uid://b6gdj5t555fyq" path="res://Scripts/gameover.gd" id="1_f1a0c"]
+[ext_resource type="Script" uid="uid://b6gdj5t555fyq" path="res://scripts/gameover.gd" id="1_f1a0c"]
 
 [node name="gameover" type="Control"]
 visibility_layer = 32
