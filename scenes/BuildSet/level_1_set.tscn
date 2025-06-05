@@ -1927,7 +1927,7 @@ position = Vector2(1627, 366)
 
 [node name="Ladder6" parent="Dynamic" instance=ExtResource("7_yuf0x")]
 z_index = 6
-position = Vector2(1627, 298)
+position = Vector2(1627, 302)
 
 [node name="Interactions" type="Node2D" parent="."]
 
