@@ -21,8 +21,26 @@
 		"\"oh shit i accidentally opened the security door don't go thr-\""
 		
 	],
-	"computer1" : [
+	"computer" : [
 		"After finding the desktop, you clear a gate for a trolley to the next station.",
 		".. It would be a good idea to climb back up to the surface."
-	]
+	],
+	"sign1" : [
+		"WARNING",
+		"LEVEL 5 HAZARD IN CONTAINMENT UNIT",
+		"PERSONNEL ADVISED OF FOLLOWING HAZARDS:",
+		"INFECTED HUMAN",
+		"ADDITIONAL HAZARDS",
+		"COMP SCI STUDENT DEFERRED TO GEOMATICS",
+		"UNEMPLOYED",
+		"FIRST INITIAL STARTS WITH T",
+		"PROCEED WITH CAUTION"
+	],	
+	"sign2" : [
+		"ENSAYO CELL 5TH STOP",
+		".. wait",
+		"is this a bus stop????!?!?",
+		"who puts a bus stop this close to a maximum security cell????",
+		"there should be some way to open the gate ahead though.."
+	],
 }

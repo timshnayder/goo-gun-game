@@ -46,8 +46,9 @@ func entered_ladder():
 func exited_ladder():
 	onLadder-=1;
 	
-func pickedUpBlueGun():
+func pickedUpBlueOrangeGun():
 	blueUnlocked=true;
+	orangeUnlocked=true;
 	gooselect=1;
 	gun.show()
 	hotbar.show()

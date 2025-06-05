@@ -1,15 +1,15 @@
 [gd_scene load_steps=12 format=3 uid="uid://dmslvkc2w2qva"]
 
-[ext_resource type="Script" uid="uid://bvac46ybn36do" path="res://scripts/moving_platform.gd" id="1_a7n7o"]
-[ext_resource type="Texture2D" uid="uid://bhbp8ymrhovw1" path="res://assets/Tileset/4 Animated objects/Transporter.png" id="2_832dj"]
-[ext_resource type="Texture2D" uid="uid://2567ckhxhn5r" path="res://assets/Tileset/1 Tiles/IndustrialTile_61.png" id="2_pd31i"]
-[ext_resource type="Texture2D" uid="uid://duvbh8km4uged" path="res://assets/Tileset/1 Tiles/IndustrialTile_27.png" id="3_pd31i"]
+[ext_resource type="Script" uid="uid://bvac46ybn36do" path="res://Scripts/moving_platform.gd" id="1_a7n7o"]
+[ext_resource type="Texture2D" uid="uid://bhbp8ymrhovw1" path="res://Assets/Tileset/4 Animated objects/Transporter.png" id="2_832dj"]
+[ext_resource type="Texture2D" uid="uid://2567ckhxhn5r" path="res://Assets/Tileset/1 Tiles/IndustrialTile_61.png" id="2_pd31i"]
+[ext_resource type="Texture2D" uid="uid://duvbh8km4uged" path="res://Assets/Tileset/1 Tiles/IndustrialTile_27.png" id="3_pd31i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_73jut"]
 size = Vector2(319, 9)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a7n7o"]
-size = Vector2(282, 68)
+size = Vector2(282, 45)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3d5cq"]
 atlas = ExtResource("2_832dj")
@@ -74,8 +74,11 @@ position = Vector2(347, 39)
 collision_mask = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/Area2D2"]
-position = Vector2(-339, -100)
+position = Vector2(-339, -111.5)
 shape = SubResource("RectangleShape2D_a7n7o")
+
+[node name="Timer" type="Timer" parent="StaticBody2D/Area2D2"]
+wait_time = 2.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -97,3 +100,4 @@ texture = ExtResource("3_pd31i")
 
 [connection signal="body_entered" from="StaticBody2D/Area2D2" to="." method="_on_area_2d_2_body_entered"]
 [connection signal="body_exited" from="StaticBody2D/Area2D2" to="." method="_on_area_2d_2_body_exited"]
+[connection signal="timeout" from="StaticBody2D/Area2D2/Timer" to="." method="_on_timer_timeout"]

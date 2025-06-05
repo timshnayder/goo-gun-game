@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=4 uid="uid://bmf1b0obqb0g7"]
 
-[ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://scenes/player.tscn" id="1_pvjvu"]
-[ext_resource type="PackedScene" uid="uid://bpi1kn40rvpxi" path="res://scenes/next_level.tscn" id="5_xgvtt"]
-[ext_resource type="PackedScene" uid="uid://drw7n846o385a" path="res://scenes/dialogue_player.tscn" id="6_0dgch"]
+[ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://Scenes/player.tscn" id="1_pvjvu"]
+[ext_resource type="PackedScene" uid="uid://bpi1kn40rvpxi" path="res://Scenes/next_level.tscn" id="5_xgvtt"]
+[ext_resource type="PackedScene" uid="uid://drw7n846o385a" path="res://Scenes/dialogue_player.tscn" id="6_0dgch"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xuyal"]
 0:0/0 = 0
