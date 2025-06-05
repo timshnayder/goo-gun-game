@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://scenes/player.tscn" id="1_k4jy0"]
 [ext_resource type="PackedScene" uid="uid://drw7n846o385a" path="res://scenes/dialogue_player.tscn" id="2_xtu54"]
 [ext_resource type="Texture2D" uid="uid://cy4le87c5pe45" path="res://assets/Tileset/1 Tiles/INDUSTRIALSET.png" id="2_y6wdo"]
-[ext_resource type="PackedScene" uid="uid://sjnrudub224c" path="res://scenes/gateObj.tscn" id="4_4sswc"]
+[ext_resource type="PackedScene" path="res://scenes/gateObj.tscn" id="4_4sswc"]
 [ext_resource type="PackedScene" uid="uid://dmslvkc2w2qva" path="res://scenes/movingPlatform.tscn" id="4_nhgg2"]
 [ext_resource type="Texture2D" uid="uid://damiswnf3mi0s" path="res://assets/Tileset/3 Objects/0.png" id="4_nlo68"]
 [ext_resource type="PackedScene" uid="uid://bpi1kn40rvpxi" path="res://scenes/next_level.tscn" id="5_hstma"]
