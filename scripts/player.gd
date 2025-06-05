@@ -57,7 +57,7 @@ func pickedUpBlueGun():
 func _physics_process(delta):
 	if isDead: 
 		return
-		
+	
 	if(!gooTimer.is_stopped()): #coyote timer for goo is currently on
 		if gooToRemember == 1:
 			accel = 10
@@ -172,7 +172,9 @@ func _physics_process(delta):
 	var vertical_direction = Input.get_axis("move_up", "move_down")
 	if canSticky or onLadder>0:
 		velocity.y=maxSpeed*vertical_direction
-
+	elif vertical_direction==1:
+		position+=Vector2(0,1);
+		
 	var wasOnFloor = is_on_floor()
 	move_and_slide()
 	if wasOnFloor && !is_on_floor() && !Input.is_action_pressed("jump"):
