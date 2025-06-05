@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://1e2bs40q2woh"]
 
-[ext_resource type="FontFile" uid="uid://d266cv4odlsd3" path="res://Assets/Fonts/pansyhand.ttf" id="1_03l63"]
-[ext_resource type="Script" uid="uid://b4i7fyq15155v" path="res://Scenes/button.gd" id="2_ua3wk"]
+[ext_resource type="FontFile" uid="uid://d266cv4odlsd3" path="res://assets/Fonts/pansyhand.ttf" id="1_03l63"]
+[ext_resource type="Script" path="res://Scenes/button.gd" id="2_ua3wk"]
 
 [node name="Signature" type="CanvasLayer"]
 

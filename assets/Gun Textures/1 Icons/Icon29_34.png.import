@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3ovudhgb6pvu"
-path="res://.godot/imported/Icon29_34.png-bdb34390af15da386b1c97d8fe6b8e23.ctex"
+path="res://.godot/imported/Icon29_34.png-a445e0a5f5fd15d7f6431b67ae8a5677.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Gun Textures/1 Icons/Icon29_34.png"
-dest_files=["res://.godot/imported/Icon29_34.png-bdb34390af15da386b1c97d8fe6b8e23.ctex"]
+source_file="res://assets/Gun Textures/1 Icons/Icon29_34.png"
+dest_files=["res://.godot/imported/Icon29_34.png-a445e0a5f5fd15d7f6431b67ae8a5677.ctex"]
 
 [params]
 
