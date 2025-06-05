@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccjrx6ckq2eaq"]
+
+[ext_resource type="Texture2D" path="res://assets/Free Industrial Zone Tileset/3 Objects/Ladder1.png" id="1_c2gjr"]
+[ext_resource type="Script" uid="uid://c7vplf3rwrp8i" path="res://scripts/ladder_obj.gd" id="1_p48vt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c2gjr"]
+size = Vector2(24, 95)
+
+[node name="Ladder" type="Area2D"]
+collision_mask = 128
+script = ExtResource("1_p48vt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-6, 3.5)
+shape = SubResource("RectangleShape2D_c2gjr")
+
+[node name="Ladder1" type="Sprite2D" parent="."]
+position = Vector2(-2.47935, 3.30577)
+texture = ExtResource("1_c2gjr")
+
+[node name="Ladder2" type="Sprite2D" parent="."]
+position = Vector2(-2.50414, -28.1818)
+texture = ExtResource("1_c2gjr")
+
+[node name="Ladder3" type="Sprite2D" parent="."]
+position = Vector2(-2.5, 35.25)
+texture = ExtResource("1_c2gjr")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
