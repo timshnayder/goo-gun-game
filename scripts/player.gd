@@ -19,10 +19,14 @@ extends CharacterBody2D
 @export var airresist = 5
 
 var isDead = false
-var gooselect = 1
+var gooselect = 0
 var lastGoo = 0;
 var gooToRemember = 0;
-var onLadder = false
+var onLadder = 0;
+
+var blueUnlocked = false;
+var orangeUnlocked = false;
+var stickyUnlocked = false;
 
 func kill():
 	isDead = true
@@ -31,14 +35,23 @@ func kill():
 	gameover.show() 
 	gameover.get_node("retry").grab_focus()
 	
-func _on_ready():
+func _ready():
 	gameover.hide()
+	gun.hide()
+	hotbar.hide()
 	
 func entered_ladder():
-	onLadder=true;
+	onLadder+=1;
 	
 func exited_ladder():
-	onLadder=false;
+	onLadder-=1;
+	
+func pickedUpBlueGun():
+	blueUnlocked=true;
+	gooselect=1;
+	gun.show()
+	hotbar.show()
+	hotbar.update(1)
 	
 
 func _physics_process(delta):
@@ -104,13 +117,17 @@ func _physics_process(delta):
 		velocity.y = -jumpForce
 		sprite.play("jump")
 		
-	if Input.is_action_just_pressed("toggle") && not Freeze:
-		gooselect += 1
-		if (gooselect > 3):
-			gooselect = 1
+	if Input.is_action_just_pressed("select_blue") && not Freeze && blueUnlocked:
+		gooselect = 1
+		hotbar.update(gooselect)
+	if Input.is_action_just_pressed("select_orange") && not Freeze && orangeUnlocked:
+		gooselect = 2
+		hotbar.update(gooselect)
+	if Input.is_action_just_pressed("select_sticky") && not Freeze && stickyUnlocked:
+		gooselect = 3
 		hotbar.update(gooselect)
 				
-	if Input.is_action_pressed("shoot") && not Freeze:
+	if Input.is_action_pressed("shoot") && gooselect!=0:
 		var goo = blueGoo.instantiate()
 		if gooselect == 1:
 			goo = blueGoo.instantiate()
@@ -123,8 +140,8 @@ func _physics_process(delta):
 		get_parent().add_child(goo)
 	
 	var horizontal_direction = Input.get_axis("move_left","move_right")
-	if Freeze:
-		horizontal_direction = 0
+	#if Freeze:
+		#horizontal_direction = 0
 	if horizontal_direction == 0 || velocity.x > maxSpeed || velocity.x<-maxSpeed:
 		if is_on_floor():
 			if velocity.x > 0:
@@ -153,7 +170,7 @@ func _physics_process(delta):
 		canSticky = true
 
 	var vertical_direction = Input.get_axis("move_up", "move_down")
-	if canSticky or onLadder:
+	if canSticky or onLadder>0:
 		velocity.y=maxSpeed*vertical_direction
 
 	var wasOnFloor = is_on_floor()
