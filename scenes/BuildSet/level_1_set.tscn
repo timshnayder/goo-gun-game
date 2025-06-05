@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://d0l4nyf6sgtjf" path="res://assets/Tileset/4 Animated objects/Screen2.png" id="7_5j0je"]
 [ext_resource type="Texture2D" uid="uid://dey3vgd7bx5sj" path="res://assets/Tileset/3 Objects/Board1.png" id="7_nscbv"]
 [ext_resource type="Texture2D" uid="uid://dopd6r4i15n5s" path="res://assets/Tileset/3 Objects/3.png" id="7_t5mhw"]
-[ext_resource type="PackedScene" path="res://scenes/ladderObj.tscn" id="7_yuf0x"]
+[ext_resource type="PackedScene" uid="uid://clmxg5t4fb55i" path="res://scenes/ladderObj.tscn" id="7_yuf0x"]
 [ext_resource type="Texture2D" uid="uid://by4sj67upcofk" path="res://assets/Tileset/3 Objects/4.png" id="8_8g7dv"]
 [ext_resource type="Texture2D" uid="uid://co6klsok6orto" path="res://assets/Tileset/3 Objects/Bench.png" id="8_64dxw"]
 [ext_resource type="PackedScene" path="res://scenes/Signature.tscn" id="9_3mkfn"]
