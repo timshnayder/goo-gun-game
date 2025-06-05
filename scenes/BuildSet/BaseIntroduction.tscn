@@ -1,8 +1,8 @@
-[gd_scene load_steps=10 format=4 uid="uid://bt336uf75otxv"]
+[gd_scene load_steps=10 format=4 uid="uid://dfjtlf6dywnme"]
 
-[ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://Scenes/player.tscn" id="1_lgtu8"]
-[ext_resource type="PackedScene" uid="uid://bte86ywoplew7" path="res://Scenes/interaction_node.tscn" id="7_oq6h0"]
-[ext_resource type="PackedScene" uid="uid://drw7n846o385a" path="res://Scenes/dialogue_player.tscn" id="8_qffud"]
+[ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://scenes/player.tscn" id="1_lgtu8"]
+[ext_resource type="PackedScene" uid="uid://bte86ywoplew7" path="res://scenes/interaction_node.tscn" id="7_oq6h0"]
+[ext_resource type="PackedScene" uid="uid://drw7n846o385a" path="res://scenes/dialogue_player.tscn" id="8_qffud"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t86nk"]
 separation = Vector2i(1, 1)

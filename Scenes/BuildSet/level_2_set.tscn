@@ -1,11 +1,11 @@
-[gd_scene load_steps=14 format=4 uid="uid://e1q30ta8r03v"]
+[gd_scene load_steps=14 format=4 uid="uid://bcgdw3up78qvc"]
 
 [ext_resource type="Texture2D" uid="uid://b0ucebodi4b6g" path="res://assets/Tileset/2 Background/Background.png" id="1_6mca1"]
 [ext_resource type="Texture2D" uid="uid://cy4le87c5pe45" path="res://assets/Tileset/1 Tiles/INDUSTRIALSET.png" id="2_mhidn"]
 [ext_resource type="PackedScene" uid="uid://drw7n846o385a" path="res://scenes/dialogue_player.tscn" id="3_2tpkl"]
 [ext_resource type="PackedScene" uid="uid://1e2bs40q2woh" path="res://scenes/Signature.tscn" id="5_s68sq"]
 [ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://scenes/player.tscn" id="5_u4uqt"]
-[ext_resource type="PackedScene" uid="uid://by1fr43c2r16f" path="res://scenes/blueGunPickup.tscn" id="6_3lx4i"]
+[ext_resource type="PackedScene" path="res://scenes/blueGunPickup.tscn" id="6_3lx4i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3umq3"]
 texture = ExtResource("2_mhidn")
@@ -1236,6 +1236,7 @@ position = Vector2(707, 283)
 
 [node name="Decoration" type="TileMapLayer" parent="MapLayers"]
 texture_filter = 1
+tile_map_data = PackedByteArray("AADy//z/AAAOAAEAAAA=")
 tile_set = SubResource("TileSet_k13qw")
 
 [node name="Collision" type="TileMapLayer" parent="MapLayers"]
