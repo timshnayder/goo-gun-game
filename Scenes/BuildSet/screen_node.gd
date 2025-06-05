@@ -1,7 +1,7 @@
 extends Area2D
 
 @export var interactable = true
-@export var key = "computer1"
+@export var key : String
 var active = false
 
 var interaction: Callable = func():

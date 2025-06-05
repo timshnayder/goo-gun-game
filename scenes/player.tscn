@@ -1,15 +1,14 @@
-[gd_scene load_steps=37 format=3 uid="uid://4724s760rio0"]
+[gd_scene load_steps=36 format=3 uid="uid://4724s760rio0"]
 
-[ext_resource type="Script" uid="uid://can0lntg2jr6d" path="res://scripts/player.gd" id="1_1o4hu"]
+[ext_resource type="Script" uid="uid://can0lntg2jr6d" path="res://Scripts/player.gd" id="1_1o4hu"]
 [ext_resource type="Texture2D" uid="uid://vsgb0r3dopbk" path="res://exports/itch test/assets/icon.svg" id="1_ur5tt"]
-[ext_resource type="PackedScene" uid="uid://bsw2vk4tan8fx" path="res://scenes/gun.tscn" id="3_lfjsi"]
-[ext_resource type="PackedScene" uid="uid://mrh1txgwsw53" path="res://scenes/hotbar.tscn" id="4_tuyoq"]
-[ext_resource type="PackedScene" uid="uid://nett54enrsxb" path="res://scenes/pause_menu.tscn" id="5_y4r1p"]
-[ext_resource type="PackedScene" uid="uid://b7wk7bae8r46c" path="res://scenes/gameover.tscn" id="6_smehm"]
-[ext_resource type="Texture2D" uid="uid://bjqiq45eq53vp" path="res://assets/spritesheets/Idel Animation 48x48.png" id="6_ur7pv"]
-[ext_resource type="Texture2D" uid="uid://cq18o6yr3goc6" path="res://assets/spritesheets/Jump Animation 48x48.png" id="7_y4r1p"]
-[ext_resource type="Texture2D" uid="uid://btllucs2ef1tp" path="res://assets/spritesheets/Run Animation 48x48.png" id="8_d2wvv"]
-[ext_resource type="PackedScene" uid="uid://dda73mlgsy70m" path="res://scenes/interaction_system.tscn" id="9_ur7pv"]
+[ext_resource type="PackedScene" uid="uid://bsw2vk4tan8fx" path="res://Scenes/gun.tscn" id="3_lfjsi"]
+[ext_resource type="PackedScene" uid="uid://mrh1txgwsw53" path="res://Scenes/hotbar.tscn" id="4_tuyoq"]
+[ext_resource type="PackedScene" uid="uid://b7wk7bae8r46c" path="res://Scenes/gameover.tscn" id="6_smehm"]
+[ext_resource type="Texture2D" uid="uid://bjqiq45eq53vp" path="res://Assets/Spritesheets/Idel Animation 48x48.png" id="6_ur7pv"]
+[ext_resource type="Texture2D" uid="uid://cq18o6yr3goc6" path="res://Assets/Spritesheets/Jump Animation 48x48.png" id="7_y4r1p"]
+[ext_resource type="Texture2D" uid="uid://btllucs2ef1tp" path="res://Assets/Spritesheets/Run Animation 48x48.png" id="8_d2wvv"]
+[ext_resource type="PackedScene" uid="uid://dda73mlgsy70m" path="res://Scenes/interaction_system.tscn" id="9_ur7pv"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ur7pv"]
 radius = 4.0
@@ -234,7 +233,36 @@ position_smoothing_enabled = true
 
 [node name="hotbar" parent="Camera2D/CanvasLayer" instance=ExtResource("4_tuyoq")]
 
-[node name="PauseMenu" parent="Camera2D/CanvasLayer" instance=ExtResource("5_y4r1p")]
+[node name="PauseMenu" type="Control" parent="Camera2D/CanvasLayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -7.0
+offset_right = -11.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Camera2D/CanvasLayer/PauseMenu"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 0
+offset_left = 390.0
+offset_top = 285.0
+offset_right = 763.0
+offset_bottom = 477.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Camera2D/CanvasLayer/PauseMenu/MarginContainer"]
+layout_mode = 2
+
+[node name="Resume" type="Button" parent="Camera2D/CanvasLayer/PauseMenu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Resume"
+
+[node name="Quit" type="Button" parent="Camera2D/CanvasLayer/PauseMenu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit"
 
 [node name="gameover" parent="Camera2D/CanvasLayer" instance=ExtResource("6_smehm")]
 visible = false
@@ -247,3 +275,6 @@ animation = &"jump"
 speed_scale = 2.0
 
 [node name="InteractionSystem" parent="." instance=ExtResource("9_ur7pv")]
+
+[connection signal="pressed" from="Camera2D/CanvasLayer/PauseMenu/MarginContainer/VBoxContainer/Resume" to="Camera2D/CanvasLayer/PauseMenu" method="_on_resume_pressed"]
+[connection signal="pressed" from="Camera2D/CanvasLayer/PauseMenu/MarginContainer/VBoxContainer/Quit" to="Camera2D/CanvasLayer/PauseMenu" method="_on_quit_pressed"]

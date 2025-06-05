@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfltikojt3rbq"
-path="res://.godot/imported/ground extension.png-bcf400f661aba124af87e160ac52ffd6.ctex"
+path="res://.godot/imported/ground extension.png-de0b67686bfaa93edeef76f32b0532bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tileset/2 Background/ground extension.png"
-dest_files=["res://.godot/imported/ground extension.png-bcf400f661aba124af87e160ac52ffd6.ctex"]
+source_file="res://Assets/Tileset/2 Background/ground extension.png"
+dest_files=["res://.godot/imported/ground extension.png-de0b67686bfaa93edeef76f32b0532bc.ctex"]
 
 [params]
 
