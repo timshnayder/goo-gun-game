@@ -18,11 +18,12 @@ var xPos: float
 var moveAmount: float = 8
 
 
+
 func _ready() -> void:
 	xPos = startX
 	player = get_parent().find_child("Player")
 	timer.one_shot = true
-	timer.wait_time = 2.0
+	timer.wait_time = 0.5
 
 func _process(delta: float) -> void:
 	if xPos >= endX:
