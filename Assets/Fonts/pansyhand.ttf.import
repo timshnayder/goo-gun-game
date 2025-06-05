@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://d266cv4odlsd3"
-path="res://.godot/imported/pansyhand.ttf-111620d8bf7e63c938dd9e7b212b7a43.fontdata"
+path="res://.godot/imported/pansyhand.ttf-e0e110651d6003e6baa91aa7ae2f7608.fontdata"
 
 [deps]
 
-source_file="res://Assets/Fonts/pansyhand.ttf"
-dest_files=["res://.godot/imported/pansyhand.ttf-111620d8bf7e63c938dd9e7b212b7a43.fontdata"]
+source_file="res://assets/Fonts/pansyhand.ttf"
+dest_files=["res://.godot/imported/pansyhand.ttf-e0e110651d6003e6baa91aa7ae2f7608.fontdata"]
 
 [params]
 

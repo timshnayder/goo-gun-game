@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pbnlpka6s7qq"
-path="res://.godot/imported/keyboard_tilde.png-ecb095fabaa6d16a2c1d6295f7797aca.ctex"
+path="res://.godot/imported/keyboard_tilde.png-1615001840b385021fcb80f8e039aa19.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI/Default/keyboard_tilde.png"
-dest_files=["res://.godot/imported/keyboard_tilde.png-ecb095fabaa6d16a2c1d6295f7797aca.ctex"]
+source_file="res://assets/UI/Default/keyboard_tilde.png"
+dest_files=["res://.godot/imported/keyboard_tilde.png-1615001840b385021fcb80f8e039aa19.ctex"]
 
 [params]
 

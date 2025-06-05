@@ -1,11 +1,11 @@
 [gd_scene load_steps=14 format=4 uid="uid://e1q30ta8r03v"]
 
-[ext_resource type="Texture2D" uid="uid://b0ucebodi4b6g" path="res://Assets/Tileset/2 Background/Background.png" id="1_6mca1"]
-[ext_resource type="Texture2D" uid="uid://cy4le87c5pe45" path="res://Assets/Tileset/1 Tiles/INDUSTRIALSET.png" id="2_mhidn"]
-[ext_resource type="PackedScene" uid="uid://drw7n846o385a" path="res://Scenes/dialogue_player.tscn" id="3_2tpkl"]
-[ext_resource type="PackedScene" uid="uid://1e2bs40q2woh" path="res://Scenes/Signature.tscn" id="5_s68sq"]
-[ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://Scenes/player.tscn" id="5_u4uqt"]
-[ext_resource type="PackedScene" uid="uid://by1fr43c2r16f" path="res://Scenes/blueGunPickup.tscn" id="6_3lx4i"]
+[ext_resource type="Texture2D" uid="uid://b0ucebodi4b6g" path="res://assets/Tileset/2 Background/Background.png" id="1_6mca1"]
+[ext_resource type="Texture2D" uid="uid://cy4le87c5pe45" path="res://assets/Tileset/1 Tiles/INDUSTRIALSET.png" id="2_mhidn"]
+[ext_resource type="PackedScene" uid="uid://drw7n846o385a" path="res://scenes/dialogue_player.tscn" id="3_2tpkl"]
+[ext_resource type="PackedScene" uid="uid://1e2bs40q2woh" path="res://scenes/Signature.tscn" id="5_s68sq"]
+[ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://scenes/player.tscn" id="5_u4uqt"]
+[ext_resource type="PackedScene" uid="uid://by1fr43c2r16f" path="res://scenes/blueGunPickup.tscn" id="6_3lx4i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3lx4i"]
 texture = ExtResource("2_mhidn")

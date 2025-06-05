@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjo7xka4ah7nu"
-path="res://.godot/imported/keyboard_p_outline.png-e175da1a725723f463108774e43dc4f1.ctex"
+path="res://.godot/imported/keyboard_p_outline.png-8c5ea6ea22337a94cae3040dcf1723b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI/Default/keyboard_p_outline.png"
-dest_files=["res://.godot/imported/keyboard_p_outline.png-e175da1a725723f463108774e43dc4f1.ctex"]
+source_file="res://assets/UI/Default/keyboard_p_outline.png"
+dest_files=["res://.godot/imported/keyboard_p_outline.png-8c5ea6ea22337a94cae3040dcf1723b7.ctex"]
 
 [params]
 
