@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://baor7e2ysbw73"
-path="res://.godot/imported/Pointer2.png-1a422444dddce0e7523f9b4e472fccde.ctex"
+path="res://.godot/imported/Pointer2.png-9ed511b7c70be2554907091a0586064e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tileset/3 Objects/Pointer2.png"
-dest_files=["res://.godot/imported/Pointer2.png-1a422444dddce0e7523f9b4e472fccde.ctex"]
+source_file="res://Assets/Tileset/3 Objects/Pointer2.png"
+dest_files=["res://.godot/imported/Pointer2.png-9ed511b7c70be2554907091a0586064e.ctex"]
 
 [params]
 

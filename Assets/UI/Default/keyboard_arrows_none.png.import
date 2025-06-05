@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://um87xvitjojf"
-path="res://.godot/imported/keyboard_arrows_none.png-454ccc76f2c384b1fa7fd1b2a7304761.ctex"
+path="res://.godot/imported/keyboard_arrows_none.png-73849c7cae9f30b5b987da3d32140e2e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/Default/keyboard_arrows_none.png"
-dest_files=["res://.godot/imported/keyboard_arrows_none.png-454ccc76f2c384b1fa7fd1b2a7304761.ctex"]
+source_file="res://Assets/UI/Default/keyboard_arrows_none.png"
+dest_files=["res://.godot/imported/keyboard_arrows_none.png-73849c7cae9f30b5b987da3d32140e2e.ctex"]
 
 [params]
 

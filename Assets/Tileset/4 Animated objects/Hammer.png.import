@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bta01drx0wj4s"
-path="res://.godot/imported/Hammer.png-2c1115cd86bd4fffc382a212dac4c08e.ctex"
+path="res://.godot/imported/Hammer.png-001b97c8ea8c2cf1cfbd70c457576cf7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tileset/4 Animated objects/Hammer.png"
-dest_files=["res://.godot/imported/Hammer.png-2c1115cd86bd4fffc382a212dac4c08e.ctex"]
+source_file="res://Assets/Tileset/4 Animated objects/Hammer.png"
+dest_files=["res://.godot/imported/Hammer.png-001b97c8ea8c2cf1cfbd70c457576cf7.ctex"]
 
 [params]
 

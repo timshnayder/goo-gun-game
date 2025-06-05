@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dw7tqo63hh31w"
-path="res://.godot/imported/numtile.png-0cae5c4df17e8ddb9db172c9b989a1be.ctex"
+path="res://.godot/imported/numtile.png-44d4ba28cf2d8c3e0b44455b8984abee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tileset/3 Objects/numtile.png"
-dest_files=["res://.godot/imported/numtile.png-0cae5c4df17e8ddb9db172c9b989a1be.ctex"]
+source_file="res://Assets/Tileset/3 Objects/numtile.png"
+dest_files=["res://.godot/imported/numtile.png-44d4ba28cf2d8c3e0b44455b8984abee.ctex"]
 
 [params]
 

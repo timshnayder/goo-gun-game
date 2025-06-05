@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2k2pvwsumkn7"
-path="res://.godot/imported/Coupon by craftpix.pdf.png-1f10b4668f16c0242416f2b1de4b6e7b.ctex"
+path="res://.godot/imported/Coupon by craftpix.pdf.png-dd69c72f66afd954b758fa02f8870fc4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Gun Textures/Coupon by craftpix.pdf.png"
-dest_files=["res://.godot/imported/Coupon by craftpix.pdf.png-1f10b4668f16c0242416f2b1de4b6e7b.ctex"]
+source_file="res://Assets/Gun Textures/Coupon by craftpix.pdf.png"
+dest_files=["res://.godot/imported/Coupon by craftpix.pdf.png-dd69c72f66afd954b758fa02f8870fc4.ctex"]
 
 [params]
 
