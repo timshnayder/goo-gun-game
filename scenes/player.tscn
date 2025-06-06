@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" uid="uid://can0lntg2jr6d" path="res://Scripts/player.gd" id="1_1o4hu"]
 [ext_resource type="Texture2D" uid="uid://vsgb0r3dopbk" path="res://exports/itch test/assets/icon.svg" id="1_ur5tt"]
-[ext_resource type="PackedScene" uid="uid://bsw2vk4tan8fx" path="res://Scenes/gun.tscn" id="3_lfjsi"]
+[ext_resource type="PackedScene" uid="uid://bsw2vk4tan8fx" path="res://scenes/gun.tscn" id="3_lfjsi"]
 [ext_resource type="PackedScene" uid="uid://mrh1txgwsw53" path="res://Scenes/hotbar.tscn" id="4_tuyoq"]
 [ext_resource type="PackedScene" uid="uid://b7wk7bae8r46c" path="res://Scenes/gameover.tscn" id="6_smehm"]
-[ext_resource type="Texture2D" uid="uid://bjqiq45eq53vp" path="res://Assets/Spritesheets/Idel Animation 48x48.png" id="6_ur7pv"]
-[ext_resource type="Texture2D" uid="uid://cq18o6yr3goc6" path="res://Assets/Spritesheets/Jump Animation 48x48.png" id="7_y4r1p"]
-[ext_resource type="Texture2D" uid="uid://btllucs2ef1tp" path="res://Assets/Spritesheets/Run Animation 48x48.png" id="8_d2wvv"]
+[ext_resource type="Texture2D" uid="uid://bjqiq45eq53vp" path="res://Assets/spritesheets/Idel Animation 48x48.png" id="6_ur7pv"]
+[ext_resource type="Texture2D" uid="uid://cq18o6yr3goc6" path="res://Assets/spritesheets/Jump Animation 48x48.png" id="7_y4r1p"]
+[ext_resource type="Texture2D" uid="uid://btllucs2ef1tp" path="res://Assets/spritesheets/Run Animation 48x48.png" id="8_d2wvv"]
 [ext_resource type="PackedScene" uid="uid://dda73mlgsy70m" path="res://Scenes/interaction_system.tscn" id="9_ur7pv"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ur7pv"]
@@ -200,7 +200,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Player" type="CharacterBody2D" groups=["Player"]]
+[node name="Player2" type="CharacterBody2D" groups=["Player"]]
 collision_layer = 137
 script = ExtResource("1_1o4hu")
 
