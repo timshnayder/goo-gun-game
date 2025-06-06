@@ -114,17 +114,17 @@ func _physics_process(delta):
 		if(velocity.y > maxGravity):
 			velocity.y=maxGravity
 	
-	if Input.is_action_pressed("jump") && (is_on_floor() || !coyoteTimer.is_stopped()) && not Freeze:
+	if Input.is_action_pressed("jump") && (is_on_floor() || !coyoteTimer.is_stopped()):
 		velocity.y = -jumpForce
 		sprite.play("jump")
 		
-	if Input.is_action_just_pressed("select_blue") && not Freeze && blueUnlocked:
+	if Input.is_action_just_pressed("select_blue") && blueUnlocked:
 		gooselect = 1
 		hotbar.update(gooselect)
-	if Input.is_action_just_pressed("select_orange") && not Freeze && orangeUnlocked:
+	if Input.is_action_just_pressed("select_orange")&& orangeUnlocked:
 		gooselect = 2
 		hotbar.update(gooselect)
-	if Input.is_action_just_pressed("select_sticky") && not Freeze && stickyUnlocked:
+	if Input.is_action_just_pressed("select_sticky")&& stickyUnlocked:
 		gooselect = 3
 		hotbar.update(gooselect)
 				
@@ -180,3 +180,7 @@ func _physics_process(delta):
 	move_and_slide()
 	if wasOnFloor && !is_on_floor() && !Input.is_action_pressed("jump"):
 		coyoteTimer.start();
+
+
+func _on_computer_node_ready():
+	pass # Replace with function body.

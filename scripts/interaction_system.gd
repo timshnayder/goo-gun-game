@@ -8,7 +8,6 @@ func _input(event):
 		if curINT:
 			canInteract = false
 			interactbutton.hide()
-			
 			curINT[0].interaction.call()
 			
 			canInteract = true
