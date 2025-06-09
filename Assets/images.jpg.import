@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ciha0xeguhi04"
-path="res://.godot/imported/Run Animation 48x48.png-84e4bde145def352341e125d71cb50b7.ctex"
+uid="uid://qeu016uk3ixp"
+path="res://.godot/imported/images.jpg-e4ded5d89bd2d4163aa556cfa800dad5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/spritesheets/Run Animation 48x48.png"
-dest_files=["res://.godot/imported/Run Animation 48x48.png-84e4bde145def352341e125d71cb50b7.ctex"]
+source_file="res://Assets/images.jpg"
+dest_files=["res://.godot/imported/images.jpg-e4ded5d89bd2d4163aa556cfa800dad5.ctex"]
 
 [params]
 

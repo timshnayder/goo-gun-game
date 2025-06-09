@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ciha0xeguhi04"
-path="res://.godot/imported/Run Animation 48x48.png-84e4bde145def352341e125d71cb50b7.ctex"
+uid="uid://sn0iwt5x7eq"
+path="res://.godot/imported/mrwashee.jpg-eed5074117ddad5da0afcf3718a78aea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/spritesheets/Run Animation 48x48.png"
-dest_files=["res://.godot/imported/Run Animation 48x48.png-84e4bde145def352341e125d71cb50b7.ctex"]
+source_file="res://Assets/mrwashee.jpg"
+dest_files=["res://.godot/imported/mrwashee.jpg-eed5074117ddad5da0afcf3718a78aea.ctex"]
 
 [params]
 

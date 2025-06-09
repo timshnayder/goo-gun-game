@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://dmslvkc2w2qva"]
+[gd_scene load_steps=13 format=3 uid="uid://dmslvkc2w2qva"]
 
-[ext_resource type="Script" uid="uid://bvac46ybn36do" path="res://scripts/moving_platform.gd" id="1_a7n7o"]
-[ext_resource type="Texture2D" uid="uid://bhbp8ymrhovw1" path="res://assets/Tileset/4 Animated objects/Transporter.png" id="2_832dj"]
-[ext_resource type="Texture2D" uid="uid://2567ckhxhn5r" path="res://assets/Tileset/1 Tiles/IndustrialTile_61.png" id="2_pd31i"]
-[ext_resource type="Texture2D" uid="uid://duvbh8km4uged" path="res://assets/Tileset/1 Tiles/IndustrialTile_27.png" id="3_pd31i"]
+[ext_resource type="Script" uid="uid://bvac46ybn36do" path="res://Scripts/moving_platform.gd" id="1_a7n7o"]
+[ext_resource type="Texture2D" uid="uid://bhbp8ymrhovw1" path="res://Assets/Tileset/4 Animated objects/Transporter.png" id="2_832dj"]
+[ext_resource type="Texture2D" uid="uid://2567ckhxhn5r" path="res://Assets/Tileset/1 Tiles/IndustrialTile_61.png" id="2_pd31i"]
+[ext_resource type="Texture2D" uid="uid://duvbh8km4uged" path="res://Assets/Tileset/1 Tiles/IndustrialTile_27.png" id="3_pd31i"]
+[ext_resource type="Texture2D" uid="uid://d02858o1ta3a" path="res://Assets/obvious thing.jpg" id="5_3d5cq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_73jut"]
 size = Vector2(319, 9)
@@ -97,6 +98,43 @@ texture_filter = 1
 position = Vector2(7, -17)
 scale = Vector2(10, 0.5)
 texture = ExtResource("3_pd31i")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -57.0
+offset_top = -91.0
+offset_right = 102.0
+offset_bottom = -42.0
+text = "THIS IS THE TROLLEY
+STAND ON IT"
+
+[node name="ObviousThing" type="Sprite2D" parent="."]
+position = Vector2(-246, -62)
+scale = Vector2(0.10791, 0.0433673)
+texture = ExtResource("5_3d5cq")
+
+[node name="ObviousThing2" type="Sprite2D" parent="."]
+position = Vector2(-14, -212)
+rotation = 1.44093
+scale = Vector2(0.10791, 0.0433673)
+texture = ExtResource("5_3d5cq")
+
+[node name="ObviousThing3" type="Sprite2D" parent="."]
+position = Vector2(-198, -208)
+rotation = 0.906262
+scale = Vector2(0.10791, 0.0433673)
+texture = ExtResource("5_3d5cq")
+
+[node name="ObviousThing4" type="Sprite2D" parent="."]
+position = Vector2(178, -210)
+rotation = 2.08754
+scale = Vector2(0.10791, 0.0433673)
+texture = ExtResource("5_3d5cq")
+
+[node name="ObviousThing5" type="Sprite2D" parent="."]
+position = Vector2(257, -89)
+rotation = 2.72701
+scale = Vector2(0.10791, 0.0433673)
+texture = ExtResource("5_3d5cq")
 
 [connection signal="body_entered" from="StaticBody2D/Area2D2" to="." method="_on_area_2d_2_body_entered"]
 [connection signal="body_exited" from="StaticBody2D/Area2D2" to="." method="_on_area_2d_2_body_exited"]

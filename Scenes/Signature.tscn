@@ -56,7 +56,7 @@ offset_right = 240.0
 offset_bottom = 23.0
 theme_override_fonts/font = ExtResource("1_03l63")
 theme_override_font_sizes/font_size = 25
-text = "Berric Generation Version 1.12 - Dev"
+text = "Berric Generation Version 1.12 - Stable"
 
 [node name="Button" type="Button" parent="."]
 offset_left = 885.0
@@ -72,12 +72,12 @@ script = ExtResource("2_ua3wk")
 texture_filter = 1
 layout_mode = 0
 offset_left = 18.0
-offset_top = -4.0
+offset_top = -5.0
 offset_right = 241.0
-offset_bottom = 22.0
+offset_bottom = 21.0
 theme_override_fonts/font = ExtResource("1_03l63")
 theme_override_font_sizes/font_size = 30
-text = "Berric Development Build"
+text = "Berric Stable Build"
 horizontal_alignment = 1
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

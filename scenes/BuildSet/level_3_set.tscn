@@ -1,15 +1,16 @@
-[gd_scene load_steps=18 format=4 uid="uid://gqlqj8o7hniq"]
+[gd_scene load_steps=19 format=4 uid="uid://gqlqj8o7hniq"]
 
-[ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://scenes/player.tscn" id="1_erid4"]
-[ext_resource type="Texture2D" uid="uid://cy4le87c5pe45" path="res://assets/Tileset/1 Tiles/INDUSTRIALSET.png" id="2_gs8dx"]
-[ext_resource type="PackedScene" uid="uid://1e2bs40q2woh" path="res://scenes/Signature.tscn" id="3_jcte6"]
-[ext_resource type="Texture2D" uid="uid://de7crfwryurg8" path="res://assets/Tileset/2 Background/1.png" id="4_ddfsx"]
-[ext_resource type="Texture2D" uid="uid://bk7eoj8qy4wv4" path="res://assets/Tileset/2 Background/2.png" id="5_yemgq"]
-[ext_resource type="Texture2D" uid="uid://cdpyb83ssevrh" path="res://assets/Tileset/2 Background/3.png" id="6_8xlm7"]
-[ext_resource type="Texture2D" uid="uid://dr2i1e7rckkye" path="res://assets/Tileset/2 Background/4.png" id="7_816eo"]
-[ext_resource type="Texture2D" uid="uid://daumol3om4wg5" path="res://assets/Tileset/2 Background/5.png" id="8_27e11"]
-[ext_resource type="Texture2D" uid="uid://co04hqeqolot8" path="res://assets/Tileset/2 Background/cloud extension.png" id="9_rytvf"]
-[ext_resource type="Texture2D" uid="uid://bfltikojt3rbq" path="res://assets/Tileset/2 Background/ground extension.png" id="10_4svto"]
+[ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://Scenes/player.tscn" id="1_erid4"]
+[ext_resource type="Texture2D" uid="uid://cy4le87c5pe45" path="res://Assets/Tileset/1 Tiles/INDUSTRIALSET.png" id="2_gs8dx"]
+[ext_resource type="Texture2D" uid="uid://qeu016uk3ixp" path="res://Assets/images.jpg" id="3_dcerc"]
+[ext_resource type="PackedScene" uid="uid://1e2bs40q2woh" path="res://Scenes/Signature.tscn" id="3_jcte6"]
+[ext_resource type="Texture2D" uid="uid://de7crfwryurg8" path="res://Assets/Tileset/2 Background/1.png" id="4_ddfsx"]
+[ext_resource type="Texture2D" uid="uid://bk7eoj8qy4wv4" path="res://Assets/Tileset/2 Background/2.png" id="5_yemgq"]
+[ext_resource type="Texture2D" uid="uid://cdpyb83ssevrh" path="res://Assets/Tileset/2 Background/3.png" id="6_8xlm7"]
+[ext_resource type="Texture2D" uid="uid://dr2i1e7rckkye" path="res://Assets/Tileset/2 Background/4.png" id="7_816eo"]
+[ext_resource type="Texture2D" uid="uid://daumol3om4wg5" path="res://Assets/Tileset/2 Background/5.png" id="8_27e11"]
+[ext_resource type="Texture2D" uid="uid://co04hqeqolot8" path="res://Assets/Tileset/2 Background/cloud extension.png" id="9_rytvf"]
+[ext_resource type="Texture2D" uid="uid://bfltikojt3rbq" path="res://Assets/Tileset/2 Background/ground extension.png" id="10_4svto"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rilyk"]
 texture = ExtResource("2_gs8dx")
@@ -1240,6 +1241,18 @@ tile_set = SubResource("TileSet_8o6vl")
 texture_filter = 1
 tile_map_data = PackedByteArray("AADq/wEAAAANAAAAAADq/wIAAAANAAAAAADq/wMAAAANAAAAAADq/wQAAAANAAAAAADq/wUAAAANAAAAAADq/wYAAAANAAAAAADq/wcAAAANAAAAAADr/wEAAAANAAAAAADr/wIAAAANAAAAAADr/wMAAAANAAAAAADr/wQAAAANAAAAAADr/wUAAAANAAAAAADr/wYAAAANAAAAAADr/wcAAAANAAAAAADs/wEAAAANAAAAAADs/wIAAAANAAAAAADs/wMAAAANAAAAAADs/wQAAAANAAAAAADs/wUAAAANAAAAAADs/wYAAAANAAAAAADs/wcAAAANAAAAAADt/wEAAAANAAAAAADt/wIAAAANAAAAAADt/wMAAAANAAAAAADt/wQAAAANAAAAAADt/wUAAAANAAAAAADt/wYAAAANAAAAAADt/wcAAAANAAAAAADu/wEAAAANAAAAAADu/wIAAAANAAAAAADu/wMAAAANAAAAAADu/wQAAAANAAAAAADu/wUAAAANAAAAAADu/wYAAAANAAAAAADu/wcAAAANAAAAAADv/wEAAAANAAAAAADv/wIAAAANAAAAAADv/wMAAAANAAAAAADv/wQAAAANAAAAAADv/wUAAAANAAAAAADv/wYAAAANAAAAAADv/wcAAAANAAAAAADw/wEAAAANAAAAAADw/wIAAAANAAAAAADw/wMAAAANAAAAAADw/wQAAAANAAAAAADw/wUAAAANAAAAAADw/wYAAAANAAAAAADw/wcAAAANAAAAAADx/wEAAAANAAAAAADx/wIAAAANAAAAAADx/wMAAAANAAAAAADx/wQAAAANAAAAAADx/wUAAAANAAAAAADx/wYAAAANAAAAAADx/wcAAAANAAAAAADy/wEAAAANAAAAAADy/wIAAAANAAAAAADy/wMAAAANAAAAAADy/wQAAAANAAAAAADy/wUAAAANAAAAAADy/wYAAAANAAAAAADy/wcAAAANAAAAAADz/wEAAAANAAAAAADz/wIAAAANAAAAAADz/wMAAAANAAAAAADz/wQAAAANAAAAAADz/wUAAAANAAAAAADz/wYAAAANAAAAAADz/wcAAAANAAAAAAD0/wEAAAANAAAAAAD0/wIAAAANAAAAAAD0/wMAAAANAAAAAAD0/wQAAAANAAAAAAD0/wUAAAANAAAAAAD0/wYAAAANAAAAAAD0/wcAAAANAAAAAAD1/wEAAAANAAAAAAD1/wIAAAANAAAAAAD1/wMAAAANAAAAAAD1/wQAAAANAAAAAAD1/wUAAAANAAAAAAD1/wYAAAANAAAAAAD1/wcAAAANAAAAAAD2/wEAAAANAAAAAAD2/wIAAAANAAAAAAD2/wMAAAANAAAAAAD2/wQAAAANAAAAAAD2/wUAAAANAAAAAAD2/wYAAAANAAAAAAD2/wcAAAANAAAAAAD3/wEAAAANAAAAAAD3/wIAAAANAAAAAAD3/wMAAAANAAAAAAD3/wQAAAANAAAAAAD3/wUAAAANAAAAAAD3/wYAAAANAAAAAAD3/wcAAAANAAAAAAD4/wEAAAANAAAAAAD4/wIAAAANAAAAAAD4/wMAAAANAAAAAAD4/wQAAAANAAAAAAD4/wUAAAANAAAAAAD4/wYAAAANAAAAAAD4/wcAAAANAAAAAAD5/wEAAAANAAAAAAD5/wIAAAANAAAAAAD5/wMAAAANAAAAAAD5/wQAAAANAAAAAAD5/wUAAAANAAAAAAD5/wYAAAANAAAAAAD5/wcAAAANAAAAAAD6/wEAAAANAAAAAAD6/wIAAAANAAAAAAD6/wMAAAANAAAAAAD6/wQAAAANAAAAAAD6/wUAAAANAAAAAAD6/wYAAAANAAAAAAD6/wcAAAANAAAAAAD7/wEAAAANAAAAAAD7/wIAAAANAAAAAAD7/wMAAAANAAAAAAD7/wQAAAANAAAAAAD7/wUAAAANAAAAAAD7/wYAAAANAAAAAAD7/wcAAAANAAAAAAD8/wEAAAANAAAAAAD8/wIAAAANAAAAAAD8/wMAAAANAAAAAAD8/wQAAAANAAAAAAD8/wUAAAANAAAAAAD8/wYAAAANAAAAAAD8/wcAAAANAAAAAAD9/wEAAAANAAAAAAD9/wIAAAANAAAAAAD9/wMAAAANAAAAAAD9/wQAAAANAAAAAAD9/wUAAAANAAAAAAD9/wYAAAANAAAAAAD9/wcAAAANAAAAAAD+/wEAAAANAAAAAAD+/wIAAAANAAAAAAD+/wMAAAANAAAAAAD+/wQAAAANAAAAAAD+/wUAAAANAAAAAAD+/wYAAAANAAAAAAD+/wcAAAANAAAAAAD//wEAAAANAAAAAAD//wIAAAANAAAAAAD//wMAAAANAAAAAAD//wQAAAANAAAAAAD//wUAAAANAAAAAAD//wYAAAANAAAAAAD//wcAAAANAAAAAAAAAAEAAAANAAAAAAAAAAIAAAANAAAAAAAAAAMAAAANAAAAAAAAAAQAAAANAAAAAAAAAAUAAAANAAAAAAAAAAYAAAANAAAAAAAAAAcAAAANAAAAAAABAAEAAAANAAAAAAABAAIAAAANAAAAAAABAAMAAAANAAAAAAABAAQAAAANAAAAAAABAAUAAAANAAAAAAABAAYAAAANAAAAAAABAAcAAAANAAAAAAACAAEAAAANAAAAAAACAAIAAAANAAAAAAACAAMAAAANAAAAAAACAAQAAAANAAAAAAACAAUAAAANAAAAAAACAAYAAAANAAAAAAACAAcAAAANAAAAAAADAAEAAAANAAAAAAADAAIAAAANAAAAAAADAAMAAAANAAAAAAADAAQAAAANAAAAAAADAAUAAAANAAAAAAADAAYAAAANAAAAAAADAAcAAAANAAAAAAAEAAEAAAANAAAAAAAEAAIAAAANAAAAAAAEAAMAAAANAAAAAAAEAAQAAAANAAAAAAAEAAUAAAANAAAAAAAEAAYAAAANAAAAAAAEAAcAAAANAAAAAAAFAAEAAAANAAAAAAAFAAIAAAANAAAAAAAFAAMAAAANAAAAAAAFAAQAAAANAAAAAAAFAAUAAAANAAAAAAAFAAYAAAANAAAAAAAFAAcAAAANAAAAAAA=")
 tile_set = SubResource("TileSet_x5318")
+
+[node name="Label" type="Label" parent="MapLayers"]
+offset_left = -480.0
+offset_top = -56.0
+offset_right = -440.0
+offset_bottom = -33.0
+text = "dumass
+playe"
+
+[node name="Images" type="Sprite2D" parent="MapLayers"]
+position = Vector2(35, -82)
+texture = ExtResource("3_dcerc")
 
 [node name="Signature" parent="." instance=ExtResource("3_jcte6")]
 

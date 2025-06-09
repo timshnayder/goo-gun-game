@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ciha0xeguhi04"
-path="res://.godot/imported/Run Animation 48x48.png-84e4bde145def352341e125d71cb50b7.ctex"
+uid="uid://d02858o1ta3a"
+path="res://.godot/imported/obvious thing.jpg-a8ffd39689c4f002392e70391b9b4840.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/spritesheets/Run Animation 48x48.png"
-dest_files=["res://.godot/imported/Run Animation 48x48.png-84e4bde145def352341e125d71cb50b7.ctex"]
+source_file="res://Assets/obvious thing.jpg"
+dest_files=["res://.godot/imported/obvious thing.jpg-a8ffd39689c4f002392e70391b9b4840.ctex"]
 
 [params]
 

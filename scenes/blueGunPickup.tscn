@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://by1fr43c2r16f"]
 
-[ext_resource type="Script" uid="uid://flpdjb4xu2gn" path="res://scripts/blueGunPickup.gd" id="1_oidg3"]
-[ext_resource type="Texture2D" uid="uid://fddobkxyshnu" path="res://assets/Gun Textures/1 Icons/Icon29_17.png" id="2_wnibt"]
+[ext_resource type="Script" uid="uid://flpdjb4xu2gn" path="res://Scripts/blueGunPickup.gd" id="1_oidg3"]
+[ext_resource type="Texture2D" uid="uid://fddobkxyshnu" path="res://Assets/Gun Textures/1 Icons/Icon29_17.png" id="2_wnibt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pwaov"]
 size = Vector2(36, 18)
