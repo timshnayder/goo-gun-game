@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var SceneTransitionAnimation = $SceneTransitionAnimation/AnimationPlayer
 @onready var blueGoo = preload("res://scenes/blue_goo_projectile.tscn")
 @onready var orangeGoo = preload("res://scenes/orange_goo_projectile.tscn")
 @onready var stickyGoo = preload("res://scenes/sticky_goo_projectile.tscn")
@@ -36,6 +37,9 @@ func kill():
 	gameover.get_node("retry").grab_focus()
 	
 func _ready():
+	SceneTransitionAnimation.get_parent().get_node("ColorRect").color.a = 255
+	await get_tree().create_timer(0.001).timeout
+	SceneTransitionAnimation.play("fade_out")
 	gameover.hide()
 	gun.hide()
 	hotbar.hide()

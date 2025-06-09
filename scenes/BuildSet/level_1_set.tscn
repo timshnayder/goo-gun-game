@@ -1,9 +1,9 @@
-[gd_scene load_steps=81 format=4 uid="uid://bw5do6tu4lkyn"]
+[gd_scene load_steps=82 format=4 uid="uid://bw5do6tu4lkyn"]
 
 [ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://scenes/player.tscn" id="1_k4jy0"]
 [ext_resource type="PackedScene" uid="uid://drw7n846o385a" path="res://scenes/dialogue_player.tscn" id="2_xtu54"]
 [ext_resource type="Texture2D" uid="uid://cy4le87c5pe45" path="res://assets/Tileset/1 Tiles/INDUSTRIALSET.png" id="2_y6wdo"]
-[ext_resource type="PackedScene" path="res://scenes/gateObj.tscn" id="4_4sswc"]
+[ext_resource type="PackedScene" uid="uid://sjnrudub224c" path="res://scenes/gateObj.tscn" id="4_4sswc"]
 [ext_resource type="PackedScene" uid="uid://dmslvkc2w2qva" path="res://scenes/movingPlatform.tscn" id="4_nhgg2"]
 [ext_resource type="Texture2D" uid="uid://damiswnf3mi0s" path="res://assets/Tileset/3 Objects/0.png" id="4_nlo68"]
 [ext_resource type="PackedScene" uid="uid://bpi1kn40rvpxi" path="res://scenes/next_level.tscn" id="5_hstma"]
@@ -45,6 +45,7 @@
 [ext_resource type="Texture2D" uid="uid://cb0w0bsslpu3y" path="res://assets/Tileset/3 Objects/Locker3.png" id="31_r2ygk"]
 [ext_resource type="Texture2D" uid="uid://s2jxbm6fivyw" path="res://assets/Tileset/3 Objects/Box8.png" id="32_5kbvc"]
 [ext_resource type="Texture2D" uid="uid://cxhjia5qwcexe" path="res://assets/Tileset/3 Objects/Box1.png" id="33_snour"]
+[ext_resource type="PackedScene" uid="uid://w8kuv5n06r7l" path="res://scenes/scene_transition_animation.tscn" id="46_ky8cf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nscbv"]
 texture = ExtResource("2_y6wdo")
@@ -1748,6 +1749,8 @@ radius = 39.0128
 
 [node name="L1Set" type="Node2D"]
 
+[node name="SceneTransitionAnimation" parent="." instance=ExtResource("46_ky8cf")]
+
 [node name="Player" parent="." instance=ExtResource("1_k4jy0")]
 z_index = 11
 position = Vector2(193, 256)
@@ -2022,5 +2025,3 @@ position = Vector2(-100, 486)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("16_vf64h")
 centered = false
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]

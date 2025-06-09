@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bsw2vk4tan8fx"]
 
-[ext_resource type="Script" uid="uid://cr3aohv28y3q" path="res://Scripts/gun.gd" id="1_md7j3"]
-[ext_resource type="Texture2D" uid="uid://fddobkxyshnu" path="res://Assets/Gun Textures/1 Icons/Icon29_17.png" id="2_og67c"]
+[ext_resource type="Script" uid="uid://cr3aohv28y3q" path="res://scripts/gun.gd" id="1_md7j3"]
+[ext_resource type="Texture2D" uid="uid://fddobkxyshnu" path="res://assets/Gun Textures/1 Icons/Icon29_17.png" id="2_og67c"]
 
 [node name="Node2D" type="Node2D"]
 z_index = 2

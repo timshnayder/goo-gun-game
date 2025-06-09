@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://bcgdw3up78qvc"]
+[gd_scene load_steps=15 format=4 uid="uid://bcgdw3up78qvc"]
 
 [ext_resource type="Texture2D" uid="uid://b0ucebodi4b6g" path="res://assets/Tileset/2 Background/Background.png" id="1_6mca1"]
 [ext_resource type="Texture2D" uid="uid://cy4le87c5pe45" path="res://assets/Tileset/1 Tiles/INDUSTRIALSET.png" id="2_mhidn"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://1e2bs40q2woh" path="res://scenes/Signature.tscn" id="5_s68sq"]
 [ext_resource type="PackedScene" uid="uid://4724s760rio0" path="res://scenes/player.tscn" id="5_u4uqt"]
 [ext_resource type="PackedScene" path="res://scenes/blueGunPickup.tscn" id="6_3lx4i"]
+[ext_resource type="PackedScene" uid="uid://w8kuv5n06r7l" path="res://scenes/scene_transition_animation.tscn" id="7_3ingk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3umq3"]
 texture = ExtResource("2_mhidn")
@@ -1221,6 +1222,8 @@ sources/3 = SubResource("TileSetAtlasSource_yyu2b")
 
 [node name="L2Set" type="Node2D"]
 
+[node name="SceneTransitionAnimation" parent="." instance=ExtResource("7_3ingk")]
+
 [node name="Background" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(707, 283)
@@ -1255,7 +1258,7 @@ scale = Vector2(3.40451, 2.20988)
 [node name="DialoguePlayer" parent="Scripts" instance=ExtResource("3_2tpkl")]
 
 [node name="Player" parent="." instance=ExtResource("5_u4uqt")]
-position = Vector2(134, 249)
+position = Vector2(132, 282)
 scale = Vector2(2, 2)
 
 [node name="Signature" parent="." instance=ExtResource("5_s68sq")]
